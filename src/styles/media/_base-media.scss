@@ -1,0 +1,23 @@
+@media (max-width: 700px) {
+    h1 {
+        font-size: 12.33vw;
+    }
+    
+    h2 {
+        font-size: 8vw;    
+    }
+    
+    h3 {
+        font-size: 8vw;
+    }
+    
+    a.view-all {
+        gap: 5.33vw;
+        font-size: 5.33vw;
+        letter-spacing: -0.007px;
+
+        svg {
+            width: 4.26vw;
+        }
+    }
+}

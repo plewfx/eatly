@@ -1,0 +1,229 @@
+@use '../abstracts/variables';
+
+@media (max-width: 700px) {
+    .header {
+        max-width: 100vw;
+        .container {
+            padding: 8.8vw 0 8.2vw 0;
+            border-bottom: 0.2666vw;
+        }
+        
+        .logo {
+            position: relative;
+            z-index: 999999;
+            gap: 3vw;
+        
+    
+            img {
+                width: 12vw;
+            }
+            
+            span {
+                font-size: 5.64vw;
+            }
+        }
+    
+        &__nav {
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            right: -106.66vw;
+            top: 0;
+            position: fixed;
+            padding: 30vw 26.66vw 0 26.66vw;
+            transition: .5s;
+    
+            &.active {
+                right: 0;
+                background-color: variables.$white-2;
+            }
+    
+            a {
+                font-size: 8vw;
+                line-height: 10vw;
+            }
+        }
+    
+        &__autho {
+            position: absolute;
+            z-index: 99999;
+            flex-direction: column;
+            top: 100vw;
+            right: -100vw;
+            transition: .5s;
+            
+            a {
+                border-radius: 2.666vw;
+                padding: 3.8vw 6.66vw 3.46vw 6.4vw;
+                a {
+                    font-size: 8vw;
+                    line-height: 10vw;
+                    letter-spacing: 0.0346vw;
+                }
+            }
+    
+            &.active {
+                right: 20%;
+            }
+        }
+    
+        &__burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 6vw;
+            position: relative;
+            width: 8.4vw;
+    
+            &::after, span, &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 8.4vw;
+                height: 0.53vw;
+                background-color: variables.$dark-1;
+                transition: .5s;
+            }
+            
+            &::after {
+                top: 0;
+            }
+            
+            span {
+                top: 2.65vw;
+            }
+    
+            &::before {
+                bottom: 0;
+            }
+        }
+    
+        &__burger-active {
+            height: 0.88vw;
+            position: relative;
+            width: 8.4vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            &::after, span, &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 8.4vw;
+                height: .53vw;
+                background-color: variables.$dark-1;
+                transition: .5s;
+            }
+    
+            &::after {
+                top: 0;
+            }
+    
+            span {
+                top: 2.65vw;
+                transform: scale(0);
+            }
+    
+            &::before {
+                bottom: none;
+            }
+    
+            &::after {
+                transform: rotate(45deg);
+            }
+            
+            &::before {
+                transform: rotate(-45deg);            
+            }
+        } 
+    }
+
+    main {
+        padding-top: 28.2vw;
+    }
+
+    .not-found {
+        .container {
+            p {
+                font-size: 5vw;
+            }
+        
+            a {
+                font-size: 5vw;
+            }
+        }
+    }
+
+    .footer {
+        .container {
+            position: relative;
+            padding: 14.66vw 0 9.6vw 0;
+    
+            .stick {
+                margin: 2vw 0 4vw 0;
+                width: 100%;
+                height: 0.2666vw;
+                opacity: 0.25;
+                background: #818181;
+            }
+        }
+    
+        &__line1 {
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 14.13vw;
+        }
+    
+        .logo {
+            gap: 2.59vw;
+    
+            img {
+                width: 10.8vw;
+            }
+    
+            span {
+                font-size: 5vw;
+            }
+        }
+    
+        &__nav {
+            display: flex;
+            gap: 8vw;
+            flex-direction: column;
+    
+            a {
+                font-size: 3.73vw;
+                line-height: 134.887%;
+                color: #606060;
+                text-transform: uppercase;
+            }
+        }
+    
+        &__line2 {
+            justify-content: center;
+            font-size: 3.6vw;
+
+            .footer__nav {
+                top: 71px;
+                right: 0;
+                position: absolute;
+                flex-direction: row;
+
+                a {
+                    img {
+                        height: 4.26vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
