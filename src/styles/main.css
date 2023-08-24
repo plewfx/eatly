@@ -281,7 +281,7 @@ a.view-all:hover svg {
 .banner__block {
   position: relative;
   border-radius: 2.08vw;
-  background-image: url("/src/assets/icons/background.svg");
+  background-image: url("/eatly/assets/icons/background.svg");
   background-size: contain;
   background-color: #6C5FBC;
   padding: 2.569vw 0 4.23vw 4.6vw;
@@ -814,7 +814,7 @@ main.home .mobile__image {
   position: relative;
 }
 main.home .mobile__image-frame {
-  background-image: url("/src/assets/home/phone-frame.png");
+  background-image: url("/eatly/assets/home/phone-frame.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -822,7 +822,7 @@ main.home .mobile__image-frame {
   height: 42.3vw;
 }
 main.home .mobile__image-screen {
-  background-image: url("/src/assets/home/phone-screen.png");
+  background-image: url("/eatly/assets/home/phone-screen.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

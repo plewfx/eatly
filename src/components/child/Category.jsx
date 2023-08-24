@@ -5,7 +5,7 @@ const Category = ({ name, img }) => {
 
     return (
         <div onClick={() => setSelected(prev => !prev)} className={selected ? 'category active ' + name : 'category ' + name}>
-            <img src={'/src/assets/icons/' + img + '.svg'} alt="" />
+            <img src={'/eatly/assets/icons/' + img + '.svg'} alt="" />
             <h6>{name}</h6>
         </div>
     )

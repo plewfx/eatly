@@ -31,7 +31,7 @@ const Banner = () => {
                         <input type="email" placeholder={screenSize.width > 700 ? "Enter Your Email Address" : "Email Address"}/>
                         <button className="button__simple">subscribe</button>
                     </form>
-                    <img data-aos='fade-up-left' data-aos-delay='150' src="/src/assets/dishes/trending-swe-dish.png" alt="" />
+                    <img data-aos='fade-up-left' data-aos-delay='150' src="/eatly/assets/dishes/trending-swe-dish.png" alt="" />
                 </div>
             </div>
         </section>

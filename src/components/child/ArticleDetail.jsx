@@ -13,7 +13,7 @@ const ArticleDetail = () => {
     console.log(curr)
     return (
         <section className='article-detail'>
-            <img src={'/src/assets/articles/' + curr.id + '.png'} alt="" />
+            <img src={'/eatly/assets/articles/' + curr.id + '.png'} alt="" />
         </section>
     );
 };

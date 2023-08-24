@@ -1,7 +1,7 @@
 const generateStars = (count) => {
     let list = []
     for (let i = 0; i < count; i++) {
-         list.push(<img src="/src/assets/icons/y-star.svg"/>)
+         list.push(<img src="/eatly/assets/icons/y-star.svg"/>)
     }
     return list
 }
@@ -11,7 +11,7 @@ const Review = ({ id, img, name, date, text, rating }) => {
         <div className="review box-shadow" data-aos='fade-right' data-aos-delay={id * 100}>
             <div className="review__header">
                 <div className="review__header-profile">
-                    <img src={'/src/assets/' + img + '.png'} alt={name} />
+                    <img src={'/eatly/assets/' + img + '.png'} alt={name} />
                     <h6>{name}</h6>
                     <p>{date} With us </p>
                 </div>
