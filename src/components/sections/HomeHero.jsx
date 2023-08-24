@@ -39,8 +39,8 @@ const HomeHero = () => {
                         </div>
                         <div className="hero__certificate">
                             <Link to='https:/trustpilot.com'>
-                                <img src="/eatly/assets/icons/trustpilot.svg" />
-                                <img src="/eatly/assets/icons/stars.svg" />
+                                <img src="/eatly/src/assets/icons/trustpilot.svg" />
+                                <img src="/eatly/src/assets/icons/stars.svg" />
                                 <span>4900+</span>
                             </Link>
                         </div>

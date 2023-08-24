@@ -3,7 +3,7 @@ import Layout from "./components//layout/Layout"
 import Home from "./pages/Home"
 import Menu from "./pages/Menu"
 import Blog from "./pages/Blog"
-import ArticleDetail from "./components/child/ArticleDetail"
+import ArticleDetail from "./pages/ArticleDetail"
 import NotFound from "./pages/NotFound"
 
 function App() {

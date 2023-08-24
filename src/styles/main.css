@@ -281,7 +281,7 @@ a.view-all:hover svg {
 .banner__block {
   position: relative;
   border-radius: 2.08vw;
-  background-image: url("/eatly/assets/icons/background.svg");
+  background-image: url("/eatly/src/assets/icons/background.svg");
   background-size: contain;
   background-color: #6C5FBC;
   padding: 2.569vw 0 4.23vw 4.6vw;
@@ -533,6 +533,89 @@ main {
 .faq h3 {
   text-align: center;
   line-height: 120%;
+}
+
+.article-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5.55vw;
+}
+.article-detail__head .container {
+  padding-top: 8.75vw;
+}
+.article-detail__head-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.article-detail__head-info h4 {
+  line-height: 119%;
+  margin-bottom: 2.22vw;
+}
+.article-detail__head-img {
+  margin-top: 4.44vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 28vw;
+}
+.article-detail__head-profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 0.8vw;
+       column-gap: 0.8vw;
+}
+.article-detail__head-profile img {
+  grid-row: 1/3;
+}
+.article-detail__head-profile p {
+  color: #676767;
+  font-family: "Poppins";
+  font-size: 0.817vw;
+  font-weight: 400;
+}
+.article-detail__head-profile h6 {
+  font-size: 1.18vw;
+  line-height: 153%;
+}
+.article-detail__head-headings {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+}
+.article-detail__main .container {
+  display: flex;
+}
+.article-detail__main-headings {
+  display: flex;
+  flex-direction: column;
+  gap: 7vw;
+}
+.article-detail__main-headings .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9vw;
+}
+.article-detail__main-headings .heading ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  padding-left: 1.3vw;
+}
+.article-detail__main-headings .heading p, .article-detail__main-headings .heading ul li {
+  font-size: 1.5vw;
+}
+.article-detail__main-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article-detail__main-more .article {
+  padding: 1.5vw 1.1vw 1.9vw;
+}
+.article-detail__controls .container {
+  padding-bottom: 11.6vw;
 }
 
 main.home .hero .container {
@@ -814,7 +897,7 @@ main.home .mobile__image {
   position: relative;
 }
 main.home .mobile__image-frame {
-  background-image: url("/eatly/assets/home/phone-frame.png");
+  background-image: url("/eatly/src/assets/home/phone-frame.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -822,7 +905,7 @@ main.home .mobile__image-frame {
   height: 42.3vw;
 }
 main.home .mobile__image-screen {
-  background-image: url("/eatly/assets/home/phone-screen.png");
+  background-image: url("/eatly/src/assets/home/phone-screen.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

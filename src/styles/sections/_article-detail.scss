@@ -1,0 +1,106 @@
+@use '../abstracts/variables';
+
+.article-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5.55vw;
+
+    &__head {
+        .container {
+            padding-top: 8.75vw;
+        }
+    
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            h4 {
+                line-height: 119%;
+                margin-bottom: 2.22vw;
+            }
+        }
+    
+        &-img {
+            margin-top: 4.44vw;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 28vw;
+        }
+    
+        &-profile {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 0.8vw;
+    
+            img {
+                grid-row: 1 / 3;
+            }
+    
+            p {
+                color: variables.$grey-2;
+                font-family: 'Poppins';
+                font-size: 0.817vw;
+                font-weight: 400;
+            }
+    
+            h6 {
+                font-size: 1.18vw;
+                line-height: 153%;
+            }
+        }
+    
+        &-headings {
+            display: flex;
+            flex-direction: column;
+            gap: 7vw;
+        }
+    }
+
+    &__main {
+        .container {
+            display: flex;
+        }
+
+        &-headings {
+            display: flex;
+            flex-direction: column;
+            gap: 7vw;
+
+            .heading {
+                display: flex;
+                flex-direction: column;
+                gap: 1.9vw;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5vw;
+                    padding-left: 1.3vw;
+                }
+
+                p, ul li {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+
+        &-more {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .article {
+                padding: 1.5vw 1.1vw 1.9vw;
+            }
+        }
+    }
+
+    &__controls {
+        .container {
+            padding-bottom: 11.6vw;
+        }
+    }
+}

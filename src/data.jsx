@@ -173,7 +173,36 @@ export const articlesData = [
         profile: {
             img: 'perperzon',
             name: 'Perperzon'
-        }
+        },
+        articles: [
+            {
+                id: 1,
+                heading: 'Browse restaurants and menus',
+                paragraph: `Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance to find the perfect restaurant for your needs. Click on a restaurant to view its menu. Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance.`,
+                list: [
+                    {
+                        id: 1,
+                        name: 'It was popularized in the 1960s with the release'
+                    },
+                    {
+                        id: 2,
+                        name: 'Lorem Ipsum passages, and more recently'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                heading: 'Select your items',
+                paragraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. `,
+                list: []
+            },
+            {
+                id: 3,
+                heading: 'Place your order',
+                paragraph: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. `,
+                list: []
+            },
+        ]
     },
     {
         id: 2,
@@ -182,7 +211,36 @@ export const articlesData = [
         profile: {
             img: 'perperzon',
             name: 'Perperzon'
-        }
+        },
+        articles: [
+            {
+                id: 1,
+                heading: 'Browse restaurants and menus',
+                paragraph: `Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance to find the perfect restaurant for your needs. Click on a restaurant to view its menu. Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance.`,
+                list: [
+                    {
+                        id: 1,
+                        name: 'It was popularized in the 1960s with the release'
+                    },
+                    {
+                        id: 2,
+                        name: 'Lorem Ipsum passages, and more recently'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                heading: 'Select your items',
+                paragraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. `,
+                list: []
+            },
+            {
+                id: 3,
+                heading: 'Place your order',
+                paragraph: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. `,
+                list: []
+            },
+        ]
     },
     {
         id: 3,
@@ -191,7 +249,36 @@ export const articlesData = [
         profile: {
             img: 'perperzon',
             name: 'Perperzon'
-        }
+        },
+                articles: [
+            {
+                id: 1,
+                heading: 'Browse restaurants and menus',
+                paragraph: `Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance to find the perfect restaurant for your needs. Click on a restaurant to view its menu. Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance.`,
+                list: [
+                    {
+                        id: 1,
+                        name: 'It was popularized in the 1960s with the release'
+                    },
+                    {
+                        id: 2,
+                        name: 'Lorem Ipsum passages, and more recently'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                heading: 'Select your items',
+                paragraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. `,
+                list: []
+            },
+            {
+                id: 3,
+                heading: 'Place your order',
+                paragraph: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. `,
+                list: []
+            },
+        ]
     },
     {
         id: 4,
@@ -200,7 +287,36 @@ export const articlesData = [
         profile: {
             img: 'perperzon',
             name: 'Perperzon'
-        }
+        },
+                articles: [
+            {
+                id: 1,
+                heading: 'Browse restaurants and menus',
+                paragraph: `Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance to find the perfect restaurant for your needs. Click on a restaurant to view its menu. Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance.`,
+                list: [
+                    {
+                        id: 1,
+                        name: 'It was popularized in the 1960s with the release'
+                    },
+                    {
+                        id: 2,
+                        name: 'Lorem Ipsum passages, and more recently'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                heading: 'Select your items',
+                paragraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. `,
+                list: []
+            },
+            {
+                id: 3,
+                heading: 'Place your order',
+                paragraph: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. `,
+                list: []
+            },
+        ]
     },
     {
         id: 5,
@@ -209,7 +325,36 @@ export const articlesData = [
         profile: {
             img: 'perperzon',
             name: 'Perperzon'
-        }
+        },
+                articles: [
+            {
+                id: 1,
+                heading: 'Browse restaurants and menus',
+                paragraph: `Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance to find the perfect restaurant for your needs. Click on a restaurant to view its menu. Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance.`,
+                list: [
+                    {
+                        id: 1,
+                        name: 'It was popularized in the 1960s with the release'
+                    },
+                    {
+                        id: 2,
+                        name: 'Lorem Ipsum passages, and more recently'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                heading: 'Select your items',
+                paragraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. `,
+                list: []
+            },
+            {
+                id: 3,
+                heading: 'Place your order',
+                paragraph: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. `,
+                list: []
+            },
+        ]
     },
     {
         id: 6,
@@ -218,6 +363,35 @@ export const articlesData = [
         profile: {
             img: 'perperzon',
             name: 'Perperzon'
-        }
+        },
+                articles: [
+            {
+                id: 1,
+                heading: 'Browse restaurants and menus',
+                paragraph: `Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance to find the perfect restaurant for your needs. Click on a restaurant to view its menu. Once you're logged in, you can browse through the list of available restaurants on the Eatly website. You can filter by cuisine, price, and distance.`,
+                list: [
+                    {
+                        id: 1,
+                        name: 'It was popularized in the 1960s with the release'
+                    },
+                    {
+                        id: 2,
+                        name: 'Lorem Ipsum passages, and more recently'
+                    },
+                ]
+            },
+            {
+                id: 2,
+                heading: 'Select your items',
+                paragraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. `,
+                list: []
+            },
+            {
+                id: 3,
+                heading: 'Place your order',
+                paragraph: `Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. `,
+                list: []
+            },
+        ]
     },
 ]

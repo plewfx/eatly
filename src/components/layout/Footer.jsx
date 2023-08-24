@@ -18,10 +18,10 @@ const Footer = () => {
                 <div className="footer__line2">
                     © 2023 EATLY All Rights Reserved.
                     <div className="footer__nav">
-                        <NavLink className='nav__link' to='https:/instagram.com'><img src="/eatly/assets/icons/inst.svg" alt="" /></NavLink>
-                        <NavLink className='nav__link' to='https:/linkedin.com'><img src="/eatly/assets/icons/linkedin.svg" alt="" /></NavLink>
-                        <NavLink className='nav__link' to='https:/facebook.com'><img src="/eatly/assets/icons/fb.svg" alt="" /></NavLink>
-                        <NavLink className='nav__link' to='https:/twitter.com'><img src="/eatly/assets/icons/tweet.svg" alt="" /></NavLink>
+                        <NavLink className='nav__link' to='https:/instagram.com'><img src="/eatly/src/assets/icons/inst.svg" alt="" /></NavLink>
+                        <NavLink className='nav__link' to='https:/linkedin.com'><img src="/eatly/src/assets/icons/linkedin.svg" alt="" /></NavLink>
+                        <NavLink className='nav__link' to='https:/facebook.com'><img src="/eatly/src/assets/icons/fb.svg" alt="" /></NavLink>
+                        <NavLink className='nav__link' to='https:/twitter.com'><img src="/eatly/src/assets/icons/tweet.svg" alt="" /></NavLink>
                     </div>
                 </div>
             </div>

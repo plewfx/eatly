@@ -60,7 +60,7 @@ const HeroImage = () => {
                 </div>
                 <div className="order box-shadow">
                     <Link to='/eatly/menu' data-aos="fade-right" data-aos-delay="500">
-                        <img src="/eatly/assets/home/food.png" alt="" />
+                        <img src="/eatly/src/assets/home/food.png" alt="" />
                         <div className="text">
                             <p>Chicken Hell</p>
                             <span>On The Way</span>
@@ -76,7 +76,7 @@ const HeroImage = () => {
             </div>
             <div className="back">
                 <div className="food-img" data-aos="fade-up" data-aos-delay="300">
-                    <img src="/eatly/assets/home/food.png" alt="" />
+                    <img src="/eatly/src/assets/home/food.png" alt="" />
                 </div>
                 <svg data-aos="fade-up" data-aos-delay="700" xmlns="http:/www.w3.org/2000/svg" width="73" height="70" viewBox="0 0 73 70" fill="none">
                     <path d="M51.6734 7.86184C58.1698 17.5858 61.8794 28.6996 58.1294 40.0639C54.7445 50.3215 45.5194 56.3973 34.9256 48.787C29.9107 45.1846 26.6564 37.9143 29.9147 32.5127C33.5447 26.4949 41.6009 31.8263 43.7864 35.9217C48.891 45.487 45.5838 58.3853 34.354 64.2119C21.0553 71.112 15.3318 57.9219 15.4369 57.9188" stroke="#665AB5" strokeWidth="1.88444" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>

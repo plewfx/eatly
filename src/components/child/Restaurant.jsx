@@ -4,7 +4,7 @@ const Restaurant = ({ id, name, highlight, img, time, rating }) => {
     return (
         <Link data-aos='fade-right' data-aos-delay={`${id * 100}`} to='menu/restaurants/:id' className="restaurant">
             <div className="restaurant__image">
-                <img src={'/eatly/assets/restaurants/' + img + '.png'} alt={name} />
+                <img src={'/eatly/src/assets/restaurants/' + img + '.png'} alt={name} />
             </div>
             <div className="restaurant__info">
                 <div className={highlight}>{highlight}</div>
@@ -12,7 +12,7 @@ const Restaurant = ({ id, name, highlight, img, time, rating }) => {
                     <h5>{name}</h5>
                     <div className="restaurant__rating">
                         <p>{time}min •</p>
-                        <img src="/eatly/assets/icons/star.svg" alt="" />
+                        <img src="/eatly/src/assets/icons/star.svg" alt="" />
                         <p>{rating}</p>
                     </div>
                 </div>
