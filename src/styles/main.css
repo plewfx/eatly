@@ -132,9 +132,34 @@ h3 span {
 h4 {
   color: #323142;
   font-family: "Poppins";
+  font-size: 2.43vw;
+  font-weight: 600;
+  line-height: 73.024%;
+}
+h4 span {
+  color: #6C5FBC;
+}
+
+h5 {
+  color: #323142;
+  font-family: "Poppins";
   font-size: 1.79vw;
   font-weight: 600;
   line-height: 162.5%;
+}
+h5 span {
+  color: #6C5FBC;
+}
+
+h6 {
+  color: #323142;
+  font-family: "Poppins";
+  font-size: 1.46vw;
+  font-weight: 600;
+  line-height: 119.5%;
+}
+h6 span {
+  color: #6C5FBC;
 }
 
 button, select, option, input {
@@ -165,17 +190,15 @@ button, select, option, input {
   justify-content: center;
   cursor: pointer;
   padding: 1.23vw 1.85vw;
-}
-.button__out a, .button__simple a, .button__login a {
   font-size: 1.25vw;
   font-weight: 700;
   line-height: 1.85vw;
 }
 
-.button__login a {
+.button__login {
   color: #606060;
 }
-.button__login:hover a {
+.button__login:hover {
   color: #6C5FBC;
   text-decoration: underline;
 }
@@ -184,30 +207,22 @@ button, select, option, input {
   border-radius: 1.25vw;
   background-color: #6C5FBC;
   border: 0.07vw solid #6C5FBC;
-}
-.button__simple a {
   color: #F9F9F9;
 }
 .button__simple:hover {
-  background-color: #F9F9F9;
-}
-.button__simple:hover a {
   color: #6C5FBC;
+  background-color: #F9F9F9;
 }
 
 .button__out {
   border-radius: 1.25vw;
   background-color: #F9F9F9;
   border: 0.07vw solid #6C5FBC;
-}
-.button__out a {
   color: #6C5FBC;
 }
 .button__out:hover {
-  background-color: #6C5FBC;
-}
-.button__out:hover a {
   color: #F9F9F9;
+  background-color: #6C5FBC;
 }
 
 a.view-all {
@@ -237,6 +252,89 @@ a.view-all:hover svg {
   a.view-all svg {
     width: 1.32vw;
   }
+}
+
+.expand-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.07vw;
+  background-color: #6C5FBC;
+  width: 2.01vw;
+  height: 2.01vw;
+  border-radius: 50%;
+}
+.expand-button::after {
+  display: flex;
+  width: 0.73vw;
+  height: 0.73vw;
+  content: "";
+  background-image: url("/icons/plus.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner .container {
+  padding: 6.6vw 0;
+}
+.banner__block {
+  position: relative;
+  border-radius: 2.08vw;
+  background-image: url("/src/assets/icons/background.svg");
+  background-size: contain;
+  background-color: #6C5FBC;
+  padding: 2.569vw 0 4.23vw 4.6vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625vw;
+  animation: backgroundAnim 15s infinite;
+}
+.banner__block h2 {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-size: 4.8vw;
+  font-weight: 800;
+}
+.banner__block form {
+  opacity: 0.8;
+  width: 30.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1vw;
+  background: #FFF;
+  box-shadow: 0px 7.2533335686px 45.3333358765px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.5vw 0.4vw 0.5vw 1.51vw;
+}
+.banner__block form input {
+  color: #878787;
+  font-family: "Poppins";
+  font-size: 1.125vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.031vw;
+  text-transform: capitalize;
+}
+.banner__block form button {
+  color: #F7F8FA;
+  font-family: "Poppins";
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.0307vw;
+  text-transform: uppercase;
+}
+.banner__block form button:hover {
+  color: #6C5FBC;
+}
+.banner__block img {
+  position: absolute;
+  right: 5vw;
+  bottom: -4.5vw;
+  width: 19vw;
+  animation: rotate 7s infinite;
 }
 
 @keyframes vertical-shaking {
@@ -397,6 +495,46 @@ main {
   height: 1.45vw;
 }
 
+.faq .container {
+  position: relative;
+  padding: 13.8vw 0 12vw 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8vw;
+}
+.faq .container .css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(45deg);
+}
+.faq .container .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  box-shadow: none;
+  background-color: none;
+  background: none;
+}
+.faq .container .css-15v22id-MuiAccordionDetails-root p {
+  font-size: 1.38vw;
+  line-height: 160%;
+  font-weight: 400;
+  letter-spacing: 0.01vw;
+  color: #676767;
+}
+.faq .container .css-ahj2mt-MuiTypography-root {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.62vw;
+  color: #323142;
+  line-height: 253%;
+}
+.faq .container svg {
+  position: absolute;
+  top: 9vw;
+  left: 56.5vw;
+  width: 2.84vw;
+}
+.faq h3 {
+  text-align: center;
+  line-height: 120%;
+}
+
 main.home .hero .container {
   padding: 8.33vw 0 10vw 0;
   display: grid;
@@ -419,7 +557,10 @@ main.home .hero__text {
 main.home .hero__text h1 {
   margin-top: 0.14vw;
 }
-main.home .hero__text p a:hover span {
+main.home .hero__text p a {
+  color: #6155AE;
+}
+main.home .hero__text p a:hover {
   text-decoration: underline;
 }
 main.home .hero__subtitle {
@@ -450,13 +591,10 @@ main.home .hero__actions {
   flex-direction: column;
   gap: 2.3vw;
 }
-main.home .hero__certificate {
+main.home .hero__certificate a {
   display: flex;
   align-items: center;
   gap: 0.7vw;
-}
-main.home .hero__certificate a {
-  margin-right: 0.7vw;
 }
 main.home .hero__certificate img:nth-child(1) {
   width: 8.5vw;
@@ -466,6 +604,7 @@ main.home .hero__certificate img:nth-child(2) {
 }
 main.home .hero__certificate span {
   color: #334155;
+  opacity: 0.7;
   font-size: 1.11vw;
   font-weight: 500;
   line-height: 150%;
@@ -675,7 +814,7 @@ main.home .mobile__image {
   position: relative;
 }
 main.home .mobile__image-frame {
-  background-image: url("/home/phone-frame.png");
+  background-image: url("/src/assets/home/phone-frame.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -683,7 +822,7 @@ main.home .mobile__image-frame {
   height: 42.3vw;
 }
 main.home .mobile__image-screen {
-  background-image: url("/home/phone-screen.png");
+  background-image: url("/src/assets/home/phone-screen.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -995,8 +1134,8 @@ main.home .dashboard__purchases {
 }
 main.home .dashboard__purchases-title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 9vw;
 }
 main.home .dashboard__purchases-title h5 {
   color: #1A202C;
@@ -1099,7 +1238,7 @@ main.home .dashboard__purchases-count {
 }
 main.home .dashboard__purchases-range {
   width: 100%;
-  height: 1.5vw;
+  height: 0.65vw;
   border-radius: 17.8475vw;
 }
 main.home .dashboard__purchases-range.expense {
@@ -1131,6 +1270,26 @@ main.home .reviews__list {
   display: flex;
   align-items: center;
   gap: 3.2vw;
+  width: 100%;
+  overflow: hidden;
+}
+main.home .reviews__list .carousel-root .carousel:nth-child(2) {
+  display: none;
+}
+main.home .reviews__list .carousel-root .carousel .slide {
+  text-align: left;
+}
+main.home .reviews__list .carousel-root .carousel-slider {
+  overflow: visible;
+}
+main.home .reviews__list .carousel-root .carousel-status {
+  display: none;
+}
+main.home .reviews__list .carousel-root .control-arrow {
+  display: none;
+}
+main.home .reviews__list .carousel-root .control-dots {
+  display: none;
 }
 main.home .reviews__list .review {
   padding: 2.6vw 3vw;
@@ -1198,122 +1357,592 @@ main.home .reviews__list .review__rating img {
 main.home .banner .container {
   padding: 14vw 0;
 }
-main.home .banner__block {
-  position: relative;
-  border-radius: 2.08vw;
-  background-image: url("icons/backgroud.svg");
-  background-size: contain;
-  background-color: #6C5FBC;
-  padding: 2.569vw 0 4.23vw 4.6vw;
-  display: flex;
-  flex-direction: column;
-  gap: 0.625vw;
-  animation: backgroundAnim 15s infinite;
-}
-main.home .banner__block h2 {
-  opacity: 0.8;
-  color: #ffffff;
-  font-family: "Poppins";
-  font-size: 4.8vw;
-  font-weight: 800;
-}
-main.home .banner__block form {
-  opacity: 0.8;
-  width: 30.5vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 1vw;
-  background: #FFF;
-  box-shadow: 0px 7.2533335686px 45.3333358765px 0px rgba(0, 0, 0, 0.1);
-  padding: 0.5vw 0.4vw 0.5vw 1.51vw;
-}
-main.home .banner__block form input {
-  color: #878787;
-  font-family: "Poppins";
-  font-size: 1.125vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.031vw;
-  text-transform: capitalize;
-}
-main.home .banner__block form button {
-  color: #F7F8FA;
-  font-family: "Poppins";
-  font-size: 1vw;
-  font-weight: 500;
-  letter-spacing: 0.0307vw;
-  text-transform: uppercase;
-}
-main.home .banner__block form button:hover {
-  color: #6C5FBC;
-}
-main.home .banner__block img {
-  position: absolute;
-  right: 5vw;
-  bottom: -4.5vw;
-  width: 19vw;
-  animation: rotate 7s infinite;
-}
 
+main.menu p {
+  color: #676767;
+  font-weight: 400;
+}
+main.menu p.hero {
+  opacity: 0.7;
+  font-size: 1.25vw;
+  line-height: 155.556%;
+  padding: 0;
+}
+main.menu p.hero span {
+  color: #6155AE;
+}
 main.menu .hero .container {
   padding-top: 6vw;
   display: grid;
-  grid-template-columns: 539fr 268fr;
-  grid-template-rows: 222fr 131fr;
+  grid-template-columns: 52.5vw 26.1vw;
+  grid-template-rows: 21.3vw 12.8vw;
+  -moz-column-gap: 7.77vw;
+       column-gap: 7.77vw;
+  row-gap: 6.11vw;
 }
 main.menu .hero__banners {
   display: flex;
   flex-direction: column;
-  gap: 2.4305vw;
   position: relative;
 }
 main.menu .hero__banners svg {
   position: absolute;
-  width: 2.55vw;
-  right: -2vw;
+  width: 3.6vw;
+  right: -3vw;
   top: -1.5vw;
 }
-main.menu .hero__banners-swiper {
+main.menu .hero__banners-list .carousel:nth-child(2) {
+  display: none;
+}
+main.menu .hero__banners-list .carousel {
+  border-radius: 1.3vw;
+}
+main.menu .hero__banners-list .carousel .slide {
+  text-align: left;
+}
+main.menu .hero__banners-list .carousel-slider {
+  overflow: visible;
+}
+main.menu .hero__banners-list .carousel-status {
+  display: none;
+}
+main.menu .hero__banners-list .control-arrow {
+  display: none;
+}
+main.menu .hero__banners-list .control-dots {
+  width: 9.4vw;
   display: flex;
-  width: 6.666vw;
-  gap: 0.37vw;
+  bottom: -3.47vw;
+  left: 40%;
+  margin: 0 auto;
+  gap: 0.52vw;
 }
-main.menu .hero__banners-swiper div {
-  border-radius: 2.77vw;
-  height: 0.3vw;
-  width: 1.5vw;
-  background-color: #dbd9ee;
-}
-main.menu .hero__banners-swiper div.active {
+main.menu .hero__banners-list .control-dots .dot {
+  background: #dbd9ee;
+  margin: 0;
+  opacity: 1;
+  box-shadow: none;
   flex: 1 1 auto;
-  background-color: #6C5FBC;
+  height: 0.4vw;
+  border-radius: 3.8vw;
+  transition: 0.3s;
+}
+main.menu .hero__banners-list .control-dots .dot.selected {
+  flex: 2 1 auto;
+  background: #6C5FBC;
 }
 main.menu .hero__banner {
   position: relative;
-  border-radius: 2.08vw;
+  border-radius: 1.3vw;
   background-image: url("icons/backgroud.svg");
   background-size: contain;
   background-color: #6C5FBC;
-  padding: 1.5vw 10.4vw 1.443vw 3vw;
+  padding: 4.16vw;
   animation: backgroundAnim 15s infinite;
 }
 main.menu .hero__banner-desc h1 {
   color: #F7F8FA;
   font-family: "Poppins";
-  font-size: 3.7vw;
+  font-size: 5.2vw;
+  line-height: 85%;
   font-weight: 800;
 }
 main.menu .hero__banner-desc h1:nth-child(2) {
+  font-size: 6.07vw;
   color: #7C6FCD;
 }
 main.menu .hero__banner img {
   position: absolute;
-  right: 5vw;
-  bottom: -4.5vw;
-  width: 12.5vw;
+  right: 2.47vw;
+  bottom: -3.6vw;
+  width: 17.6vw;
   animation: rotate 7s infinite;
+}
+main.menu .hero__sort {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  border-radius: 1.65vw;
+  background: #ffffff;
+  box-shadow: 5.7121210098px 9.520201683px 28.5606040955px 0.9520201683px rgba(108, 95, 188, 0.12);
+  padding: 2.22vw 2.22vw 2.7vw 2.22vw;
+}
+main.menu .hero__sort:hover {
+  transform: scale(1.05);
+}
+main.menu .hero__sort-category {
+  display: flex;
+  flex-direction: column;
+  gap: 1.21vw;
+}
+main.menu .hero__sort-category h5 {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 1.48vw;
+  font-weight: 600;
+  line-height: 134%;
+}
+main.menu .hero__sort-category-list {
+  display: flex;
+  align-items: center;
+  gap: 0.89vw;
+}
+main.menu .hero__sort-category-list .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 6.66vw;
+  width: 4.59vw;
+  filter: drop-shadow(0px 14.7101068497px 22.0651607513px rgba(135, 125, 200, 0.25));
+  border-radius: 1.021vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+main.menu .hero__sort-category-list .category h6 {
+  font-size: 0.817vw;
+}
+main.menu .hero__sort-category-list .category.Pizza {
+  background-color: rgba(255, 222, 138, 0.35);
+  gap: 1.18vw;
+  color: #D69900;
+}
+main.menu .hero__sort-category-list .category.Pizza.active {
+  border: 0.26vw solid #D69900;
+}
+main.menu .hero__sort-category-list .category.Pizza img {
+  width: 2.4vw;
+}
+main.menu .hero__sort-category-list .category.Asian {
+  background-color: rgb(247, 197, 186);
+  gap: 0.56vw;
+  color: #FB471D;
+}
+main.menu .hero__sort-category-list .category.Asian.active {
+  border: 0.26vw solid rgba(251, 71, 29, 0.5);
+}
+main.menu .hero__sort-category-list .category.Asian img {
+  width: 3.125vw;
+}
+main.menu .hero__sort-category-list .category.Donat {
+  background-color: rgba(237, 182, 107, 0.35);
+  gap: 1.27vw;
+  color: #E28B14;
+}
+main.menu .hero__sort-category-list .category.Donat.active {
+  border: 0.26vw solid rgba(226, 139, 20, 0.5);
+}
+main.menu .hero__sort-category-list .category.Donat img {
+  width: 2.4vw;
+}
+main.menu .hero__sort-category-list .category.Ice {
+  background-color: rgba(90, 133, 255, 0.35);
+  gap: 0.9vw;
+  color: #002073;
+}
+main.menu .hero__sort-category-list .category.Ice.active {
+  border: 0.26vw solid rgba(0, 32, 115, 0.25);
+}
+main.menu .hero__sort-category-list .category.Ice img {
+  height: 2.85vw;
+}
+main.menu .hero__sort-category-list .category.active {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 16.3990440369px 24.5985679626px rgba(135, 125, 200, 0.25));
+}
+main.menu .hero__sort-category-list .category.active h6 {
+  font-size: 0.9vw;
+}
+main.menu .hero__sort-by {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9vw;
+}
+main.menu .hero__sort-by h5 {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 1.48vw;
+  font-weight: 600;
+  line-height: 134%;
+}
+main.menu .hero__sort-by-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 0.608vw;
+}
+main.menu .hero__sort-by-list p {
+  cursor: pointer;
+  color: #ACADB9;
+  font-size: 1.07vw;
+  font-weight: 500;
+  line-height: 187.02%;
+}
+main.menu .hero__sort-by-list p:nth-child(2) {
+  text-align: right;
+}
+main.menu .hero__sort-price h5 {
+  color: #323142;
+  font-family: Poppins;
+  font-size: 1.52vw;
+  font-weight: 600;
+  line-height: 134%;
+}
+main.menu .hero__sort-price .css-1aznpnh-MuiSlider-root {
+  color: #6C5FBC;
+}
+main.menu .hero__sort-price .css-1eoe787-MuiSlider-markLabel, main.menu .hero__sort-price .css-yafthl-MuiSlider-markLabel {
+  color: #CBCBCB;
+  font-family: Poppins;
+  font-size: 0.73vw;
+  font-weight: 500;
+  line-height: 280.53%;
+}
+main.menu .hero__sort button {
+  cursor: pointer;
+  padding: 1.35vw;
+  border-radius: 0.94vw;
+  background-color: #6C5FBC;
+  color: #FFF3EB;
+}
+main.menu .hero__sort button:hover {
+  opacity: 0.75;
+}
+main.menu .hero__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main.menu .hero__search-input {
+  display: flex;
+  align-items: center;
+  background-color: #EDEDED;
+  border-radius: 1vw;
+  padding: 1.73vw 27.7vw 1.73vw 1.94vw;
+  font-size: 1.43vw;
+}
+main.menu .hero__search-input svg {
+  height: 1.88vw;
+}
+main.menu .hero__search-input input {
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 117.5%;
+  letter-spacing: -0.411px;
+  font-size: 1.42vw;
+}
+main.menu .hero__search-input input::-moz-placeholder {
+  color: #AAABBA;
+}
+main.menu .hero__search-input input::placeholder {
+  color: #AAABBA;
+}
+main.menu .hero__search-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+main.menu .hero__search-buttons .button {
+  cursor: pointer;
+  text-align: center;
+  padding: 1.45vw 0;
+  border: 0.152vw solid #6C5FBC;
+  border-radius: 1.05vw 0 0 1.05vw;
+  font-size: 1.347vw;
+  font-weight: 500;
+  font-family: "Poppins";
+  color: #6C5FBC;
+}
+main.menu .hero__search-buttons .button:nth-child(2) {
+  border-radius: 0 1.05vw 1.05vw 0;
+}
+main.menu .hero__search-buttons .button.active {
+  color: #F3F5F6;
+  background-color: #6C5FBC;
+}
+main.menu .restaurants .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.944vw 0 8.33vw 0;
+  gap: 4.56vw;
+  border-bottom: 0.07vw solid #CBCBCB;
+}
+main.menu .restaurants__text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.menu .restaurants__list {
+  display: flex;
+  align-items: center;
+  gap: 2.1vw;
+}
+main.menu .restaurants .restaurant {
+  position: relative;
+  border-radius: 2.08vw;
+  box-shadow: 5.9456415176px 71.347694397px 35.6738471985px 0px rgba(229, 229, 229, 0.7);
+}
+main.menu .restaurants .restaurant__image img {
+  border-radius: 2.1vw 2.1vw 0 0;
+  width: 27vw;
+  height: 12vw;
+}
+main.menu .restaurants .restaurant__info {
+  padding: 0.7vw 0 1.5vw 2.4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main.menu .restaurants .restaurant__info div {
+  text-transform: capitalize;
+}
+main.menu .restaurants .restaurant__info .healthy {
+  color: #DAA31A;
+  background: #F7EDD0;
+  font-family: "Poppins";
+  font-size: 0.88vw;
+  font-weight: 400;
+  padding: 0.2vw 0.5vw 0.19vw 0.5vw;
+  border-radius: 0.375vw;
+}
+main.menu .restaurants .restaurant__info .trending {
+  color: #FB471D;
+  background: #F7C5BA;
+  font-family: "Poppins";
+  font-size: 0.88vw;
+  font-weight: 400;
+  padding: 0.2vw 0.5vw 0.19vw 0.5vw;
+  border-radius: 0.375vw;
+}
+main.menu .restaurants .restaurant__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.121vw;
+}
+main.menu .restaurants .restaurant__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.448vw;
+}
+main.menu .restaurants .restaurant__rating p {
+  color: #8E97A6;
+  font-size: 1.3vw;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+main.menu .restaurants .restaurant__rating img {
+  width: 1.75vw;
+  height: 1.75vw;
+}
+main.menu .restaurants .restaurant svg {
+  height: 2.8vw;
+  position: absolute;
+  bottom: 1.2vw;
+  right: 1.9vw;
+}
+main.menu .dishes .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.944vw 0 8.33vw 0;
+  gap: 4.61vw;
+  border-bottom: 0.07vw solid #CBCBCB;
+}
+main.menu .dishes .container h3 {
+  line-height: 120%;
+}
+main.menu .dishes__text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.menu .dishes__list {
+  display: flex;
+  gap: 2.1375vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main.menu .dishes__list .dish {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 2.4vw;
+  border: 0.07vw solid #F9F9F9;
+  background: #ffffff;
+  box-shadow: 6.8484177589px 82.1810150146px 41.0905075073px 0px rgba(229, 229, 229, 0.7);
+  padding: 1.8vw 0.4vw;
+}
+main.menu .dishes__list .dish__add {
+  position: absolute;
+  top: 1.65vw;
+  right: 1.5vw;
+  width: 1.527vw;
+}
+main.menu .dishes__list .dish__add svg {
+  cursor: pointer;
+  width: 100%;
+}
+main.menu .dishes__list .dish__img {
+  width: 14vw;
+}
+main.menu .dishes__list .dish__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+  padding: 0 0 0.21vw 1.6vw;
+}
+main.menu .dishes__list .dish__info-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main.menu .dishes__list .dish__info-title p {
+  padding: 0.2vw 0.51vw 0.115vw 0.51vw;
+  font-family: "Poppins";
+  font-size: 0.8vw;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 0.333vw;
+}
+main.menu .dishes__list .dish__info-title p.healthy {
+  color: #DAA31A;
+  background: #F7EDD0;
+}
+main.menu .dishes__list .dish__info-title p.trending {
+  color: #FB471D;
+  background: #F7C5BA;
+}
+main.menu .dishes__list .dish__info-title p.supreme {
+  color: #309D5B;
+  background: rgba(51, 172, 100, 0.2);
+}
+main.menu .dishes__list .dish__info-title h5 {
+  color: #323142;
+  font-size: 1.6vw;
+  line-height: 162.5%;
+}
+main.menu .dishes__list .dish__info-rating {
+  display: flex;
+  gap: 0.4vw;
+  align-items: center;
+}
+main.menu .dishes__list .dish__info-rating img {
+  width: 1.75vw;
+  height: 1.75vw;
+}
+main.menu .dishes__list .dish__info-rating p {
+  font-size: 1.2vw;
+  line-height: 133.333%;
+}
+main.menu .dishes__list .dish__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.menu .dishes__list .dish__price .prices {
+  display: flex;
+  align-items: flex-end;
+}
+main.menu .dishes__list .dish__price .prices-main {
+  color: #323142;
+  font-family: "Manrope";
+  font-size: 1.8vw;
+  line-height: 140%;
+}
+main.menu .dishes__list .dish__price .prices-lil {
+  color: #8E97A6;
+  font-family: "Manrope";
+  font-size: 1.32vw;
+  line-height: 155.556%;
+}
+main.menu .dishes__list .dish__price svg {
+  width: 2vw;
+  margin-right: 1.25vw;
+}
+
+main.blog .articles .container {
+  padding: 5vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7vw;
+}
+main.blog .articles .container h3 {
+  text-align: center;
+}
+main.blog .articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8.19vw;
+  justify-content: space-between;
+}
+main.blog .articles__list .article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  border-radius: 1.1vw;
+  background-color: #ffffff;
+  padding: 1.75vw 1.35vw 1.88vw;
+  box-shadow: 0px 0.37vw 3.25vw 0px rgba(197, 197, 197, 0.25);
+}
+main.blog .articles__list .article__img {
+  width: 21.5vw;
+}
+main.blog .articles__list .article__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.42vw;
+}
+main.blog .articles__list .article__detail-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.blog .articles__list .article__detail-profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 0.8vw;
+       column-gap: 0.8vw;
+}
+main.blog .articles__list .article__detail-profile img {
+  grid-row: 1/3;
+}
+main.blog .articles__list .article__detail-profile p {
+  color: #676767;
+  font-family: "Poppins";
+  font-size: 0.817vw;
+  font-weight: 400;
+}
+main.blog .articles__list .article__detail-profile h6 {
+  font-size: 1.18vw;
+  line-height: 153%;
+}
+main.blog .articles__list .article__detail span {
+  color: #676767;
+  font-family: "Poppins";
+  font-size: 1.1vw;
+  line-height: 197.965%;
+}
+main.blog .articles__controls {
+  display: flex;
+  align-items: center;
+  gap: 5.55vw;
+}
+main.blog .articles__controls button {
+  cursor: pointer;
+}
+main.blog .faq .container {
+  padding: 10vw 0 15.41vw 0;
+}
+main.blog .faq .container svg {
+  top: 7vw;
 }
 
 @media (max-width: 700px) {
@@ -1322,7 +1951,7 @@ main.menu .hero__banner img {
   }
   .header .container {
     padding: 8.8vw 0 8.2vw 0;
-    border-bottom: 0.2666vw;
+    border-bottom: 0.133vw solid #CBCBCB;
   }
   .header .logo {
     position: relative;
@@ -1502,6 +2131,9 @@ main.menu .hero__banner img {
   h3 {
     font-size: 8vw;
   }
+  h4 {
+    font-size: 8vw;
+  }
   a.view-all {
     gap: 5.33vw;
     font-size: 5.33vw;
@@ -1511,6 +2143,24 @@ main.menu .hero__banner img {
     width: 4.26vw;
   }
 }
+@media (max-width: 700px) {
+  .button__simple, .button__out, .button__login {
+    padding: 3.84vw 6.4vw;
+    border-radius: 2.66vw;
+  }
+}
+@media (max-width: 700px) {
+  .expand-button {
+    padding: 1.33vw;
+    width: 4.2vw;
+    height: 4.2vw;
+  }
+  .expand-button::after {
+    width: 1.46vw;
+    height: 1.46vw;
+  }
+}
+
 @media (max-width: 700px) {
   main.home .hero .container {
     padding: 15.2vw 0 24.5vw 0;
@@ -1758,6 +2408,7 @@ main.menu .hero__banner img {
     border-bottom: 0.2666vw solid #CBCBCB;
   }
   main.home .restaurants .container h3 {
+    text-align: center;
     font-size: 8vw;
     line-height: 120%;
   }
@@ -1789,7 +2440,7 @@ main.menu .hero__banner img {
   main.home .restaurants .restaurant__desc {
     gap: 0.21vw;
   }
-  main.home .restaurants .restaurant__desc h4 {
+  main.home .restaurants .restaurant__desc h5 {
     font-size: 5.46vw;
   }
   main.home .restaurants .restaurant__rating {
@@ -1817,6 +2468,7 @@ main.menu .hero__banner img {
     border-bottom: 0.2666vw solid #CBCBCB;
   }
   main.home .dishes .container h3 {
+    text-align: center;
     font-size: 8vw;
     line-height: 120%;
   }
@@ -1931,6 +2583,10 @@ main.menu .hero__banner img {
     border-radius: 4vw;
     gap: 5.9vw;
   }
+  main.home .dashboard__purchases-title {
+    gap: 0;
+    justify-content: space-between;
+  }
   main.home .dashboard__purchases-title h5 {
     font-size: 4.45vw;
     letter-spacing: 0.05vw;
@@ -1995,7 +2651,7 @@ main.menu .hero__banner img {
   }
   main.home .dashboard__purchases-range {
     width: 100%;
-    height: 0.654vw;
+    height: 1.5vw;
     border-radius: 17.8475vw;
   }
   main.home .dashboard__purchases-range.expense {
@@ -2125,8 +2781,308 @@ main.menu .hero__banner img {
 }
 
 @media (max-width: 700px) {
-  .button__simple, .button__out, .button__login {
-    padding: 3.84vw 6.4vw;
-    border-radius: 2.66vw;
+  main.menu p.hero {
+    font-size: 3vw;
+  }
+  main.menu .hero .container {
+    padding-top: 16.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+  }
+  main.menu .hero__banners svg {
+    width: 5.6vw;
+    right: -5vw;
+    top: -6.5vw;
+  }
+  main.menu .hero__banners-list .control-dots {
+    display: none;
+  }
+  main.menu .hero__banner {
+    border-radius: 2vw;
+    padding: 6.4vw;
+  }
+  main.menu .hero__banner-desc h1 {
+    font-size: 8.08vw;
+  }
+  main.menu .hero__banner-desc h1:nth-child(2) {
+    font-size: 9.4vw;
+  }
+  main.menu .hero__banner img {
+    right: 2.47vw;
+    bottom: -3.6vw;
+    width: 27.38vw;
+  }
+  main.menu .hero__sort {
+    gap: 2vw;
+    border-radius: 5.33vw;
+    padding: 7.14vw 7.36vw 8.72vw 7.36vw;
+  }
+  main.menu .hero__sort:hover {
+    transform: scale(1);
+  }
+  main.menu .hero__sort-category {
+    gap: 3.712vw;
+  }
+  main.menu .hero__sort-category h5 {
+    font-size: 4.8vw;
+  }
+  main.menu .hero__sort-category-list {
+    gap: 2.8vw;
+  }
+  main.menu .hero__sort-category-list .category {
+    height: 21.5vw;
+    width: 14.8vw;
+    border-radius: 3.28vw;
+  }
+  main.menu .hero__sort-category-list .category h6 {
+    font-size: 2.63vw;
+  }
+  main.menu .hero__sort-category-list .category.Pizza {
+    gap: 3.78vw;
+  }
+  main.menu .hero__sort-category-list .category.Pizza img {
+    width: 7.73vw;
+  }
+  main.menu .hero__sort-category-list .category.Pizza.active {
+    border: 0.85vw solid #D69900;
+  }
+  main.menu .hero__sort-category-list .category.Asian {
+    gap: 2.85vw;
+  }
+  main.menu .hero__sort-category-list .category.Asian img {
+    width: 9.5vw;
+  }
+  main.menu .hero__sort-category-list .category.Asian.active {
+    border: 0.85vw solid rgba(251, 71, 29, 0.5);
+  }
+  main.menu .hero__sort-category-list .category.Donat {
+    gap: 3.38vw;
+  }
+  main.menu .hero__sort-category-list .category.Donat img {
+    width: 7.73vw;
+  }
+  main.menu .hero__sort-category-list .category.Donat.active {
+    border: 0.85vw solid rgba(226, 139, 20, 0.5);
+  }
+  main.menu .hero__sort-category-list .category.Ice {
+    gap: 3.228vw;
+  }
+  main.menu .hero__sort-category-list .category.Ice img {
+    height: 9.2vw;
+  }
+  main.menu .hero__sort-category-list .category.Ice.active {
+    border: 0.85vw solid rgba(0, 32, 115, 0.25);
+  }
+  main.menu .hero__sort-category-list .category.active h6 {
+    font-size: 2.9vw;
+  }
+  main.menu .hero__sort-by {
+    gap: 2.73vw;
+  }
+  main.menu .hero__sort-by h5 {
+    font-size: 4.8vw;
+  }
+  main.menu .hero__sort-by-list {
+    row-gap: 1.77vw;
+  }
+  main.menu .hero__sort-by-list p {
+    font-size: 3.46vw;
+  }
+  main.menu .hero__sort-price h5 {
+    font-size: 4.9vw;
+  }
+  main.menu .hero__sort-price .css-1eoe787-MuiSlider-markLabel, main.menu .hero__sort-price .css-yafthl-MuiSlider-markLabel {
+    font-size: 2.36vw;
+  }
+  main.menu .hero__sort button {
+    font-size: 3vw;
+    padding: 4.4vw;
+    border-radius: 3vw;
+  }
+  main.menu .hero__search {
+    gap: 4.8vw;
+  }
+  main.menu .hero__search-input {
+    border-radius: 1.68vw;
+    padding: 3.7vw 56vw 3.7vw 3.7vw;
+    font-size: 3.2vw;
+  }
+  main.menu .hero__search-input svg {
+    width: 3.9vw;
+    height: 5vw;
+  }
+  main.menu .hero__search-input input {
+    letter-spacing: -0.064px;
+    font-size: 3.2vw;
+  }
+  main.menu .hero__search-buttons .button {
+    padding: 4.2vw 0;
+    border: 0.24vw solid #6C5FBC;
+    border-radius: 1.68vw 0 0 1.68vw;
+    font-size: 3.2vw;
+  }
+  main.menu .hero__search-buttons .button:nth-child(2) {
+    border-radius: 0 1.68vw 1.68vw 0;
+  }
+  main.menu .restaurants .container {
+    padding: 22.4vw 0 17.6vw 0;
+    gap: 15.7vw;
+    border-bottom: 0.2666vw solid #CBCBCB;
+  }
+  main.menu .restaurants .container h3 {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 120%;
+  }
+  main.menu .restaurants__text {
+    justify-content: center;
+  }
+  main.menu .restaurants__list {
+    flex-direction: column;
+    gap: 10.6vw;
+  }
+  main.menu .restaurants .restaurant {
+    border-radius: 6.34vw;
+  }
+  main.menu .restaurants .restaurant__image img {
+    border-radius: 2.1vw 2.1vw 0 0;
+    width: 84vw;
+    height: 37.3vw;
+  }
+  main.menu .restaurants .restaurant__info {
+    padding: 2.32vw 0 3.8vw 7.22vw;
+  }
+  main.menu .restaurants .restaurant__info .healthy {
+    font-size: 2.66vw;
+    padding: 0.65vw 1.73vw 0.4vw 1.8vw;
+    border-radius: 1.14vw;
+  }
+  main.menu .restaurants .restaurant__info .trending {
+    font-size: 2.66vw;
+    padding: 0.65vw 1.73vw 0.4vw 1.8vw;
+    border-radius: 1.14vw;
+  }
+  main.menu .restaurants .restaurant__desc {
+    gap: 0.21vw;
+  }
+  main.menu .restaurants .restaurant__desc h5 {
+    font-size: 5.46vw;
+  }
+  main.menu .restaurants .restaurant__rating {
+    gap: 1.33vw;
+  }
+  main.menu .restaurants .restaurant__rating p {
+    color: #8E97A6;
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 133.333%;
+  }
+  main.menu .restaurants .restaurant__rating img {
+    width: 5.33vw;
+    height: 5.33vw;
+  }
+  main.menu .restaurants .restaurant svg {
+    height: 8.5vw;
+    position: absolute;
+    bottom: 3.6vw;
+    right: 4.7vw;
+  }
+  main.menu .dishes .container {
+    padding: 22.6vw 0 17.6vw 0;
+    gap: 16.2vw;
+    border-bottom: 0.2666vw solid #CBCBCB;
+  }
+  main.menu .dishes .container h3 {
+    text-align: center;
+    font-size: 8vw;
+    line-height: 120%;
+  }
+  main.menu .dishes__text {
+    justify-content: center;
+  }
+  main.menu .dishes__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 5.6vw;
+         column-gap: 5.6vw;
+    row-gap: 12vw;
+  }
+  main.menu .dishes__list .dish {
+    border-radius: 6.02vw;
+    border: 0.2666vw solid #F9F9F9;
+    padding: 4.53vw 3.1vw 5.06vw 1vw;
+  }
+  main.menu .dishes__list .dish__add {
+    position: absolute;
+    top: 4.13vw;
+    right: 4vw;
+    width: 3.8vw;
+  }
+  main.menu .dishes__list .dish__add svg {
+    cursor: pointer;
+    width: 100%;
+  }
+  main.menu .dishes__list .dish__img {
+    width: 35vw;
+  }
+  main.menu .dishes__list .dish__text {
+    gap: 2.26vw;
+    padding: 0 0 4vw 5.14vw;
+  }
+  main.menu .dishes__list .dish__info-title p {
+    padding: 0.48vw 1.28vw 0.266vw 1.33vw;
+    font-size: 2vw;
+    border-radius: 0.84vw;
+  }
+  main.menu .dishes__list .dish__info-title h5 {
+    font-size: 4vw;
+  }
+  main.menu .dishes__list .dish__info-rating {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+  }
+  main.menu .dishes__list .dish__info-rating img {
+    width: 4vw;
+    height: 4vw;
+  }
+  main.menu .dishes__list .dish__info-rating p {
+    font-size: 3vw;
+    line-height: 133.333%;
+  }
+  main.menu .dishes__list .dish__price .prices-main {
+    font-size: 4.5vw;
+  }
+  main.menu .dishes__list .dish__price .prices-lil {
+    font-size: 3.28vw;
+  }
+  main.menu .dishes__list .dish__price svg {
+    width: 7.62vw;
+    margin-right: 4.8vw;
+  }
+  main.menu .faq .container {
+    position: relative;
+    padding: 24.64vw 0 25.3vw 0;
+    display: flex;
+    flex-direction: column;
+    gap: 17.8vw;
+  }
+  main.menu .faq .container .css-15v22id-MuiAccordionDetails-root p {
+    font-size: 2.9vw;
+    letter-spacing: 0.03vw;
+  }
+  main.menu .faq .container .css-ahj2mt-MuiTypography-root {
+    font-size: 3.28vw;
+  }
+  main.menu .faq .container svg {
+    position: absolute;
+    top: 18vw;
+    left: 78.5vw;
+    width: 5.73vw;
+  }
+  main.menu .faq h3 {
+    text-align: center;
+    line-height: 120%;
   }
 }/*# sourceMappingURL=main.css.map */

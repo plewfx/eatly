@@ -65,6 +65,7 @@ h3 {
     font-size: 3.125vw;
     font-weight: 600;
     line-height: 56.797%;
+
     & span {
         color: variables.$purple-1;
     }
@@ -73,9 +74,37 @@ h3 {
 h4 {
     color: variables.$dark-3;
     font-family: 'Poppins';
+    font-size: 2.43vw;
+    font-weight: 600;
+    line-height: 73.024%;
+    
+    & span {
+        color: variables.$purple-1;
+    }
+}
+
+h5 {
+    color: variables.$dark-3;
+    font-family: 'Poppins';
     font-size: 1.79vw;
     font-weight: 600;
     line-height: 162.5%;
+    
+    & span {
+        color: variables.$purple-1;
+    }
+}
+
+h6 {
+    color: variables.$dark-3;
+    font-family: 'Poppins';
+    font-size: 1.46vw;
+    font-weight: 600;
+    line-height: 119.5%;
+    
+    & span {
+        color: variables.$purple-1;
+    }
 }
 
 button, select, option, input {

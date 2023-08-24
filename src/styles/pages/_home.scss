@@ -29,10 +29,9 @@ main.home {
             
             p {
                 a {
+                    color: #6155AE;
                     &:hover {
-                        span {
-                            text-decoration: underline;                        
-                        }
+                        text-decoration: underline;
                     }
                 }
             }
@@ -72,13 +71,10 @@ main.home {
         }
     
         &__certificate {
-            display: flex;
-            align-items: center;
-            gap: 0.7vw;
-
-    
             a {
-                margin-right: .7vw;
+                display: flex;
+                align-items: center;
+                gap: 0.7vw;
             }
     
             img:nth-child(1) {
@@ -91,6 +87,7 @@ main.home {
             
             span {
                 color: variables.$blue-1;
+                opacity: 0.7;
                 font-size: 1.11vw;
                 font-weight: 500;
                 line-height: 150%;
@@ -333,7 +330,7 @@ main.home {
             position: relative;
     
             &-frame {
-                background-image: url('/home/phone-frame.png');
+                background-image: url('/src/assets/home/phone-frame.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
@@ -342,7 +339,7 @@ main.home {
             }
             
             &-screen {
-                background-image: url('/home/phone-screen.png');
+                background-image: url('/src/assets/home/phone-screen.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: absolute;
@@ -719,8 +716,8 @@ main.home {
     
             &-title {
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
+                gap: 9vw;
     
                 h5 {
                     color: variables.$dark-4;
@@ -837,7 +834,7 @@ main.home {
     
             &-range {
                 width: 100%;
-                height: 1.5vw;
+                height: 0.65vw;
                 border-radius: 17.8475vw;
                 
                 &.expense {
@@ -878,6 +875,38 @@ main.home {
             display: flex;
             align-items: center;
             gap: 3.2vw;
+            width: 100%;
+            overflow: hidden;
+
+            .carousel-root {
+
+                .carousel:nth-child(2) {
+                    display: none;
+                }
+    
+                .carousel {
+                    .slide {
+                        text-align: left;
+                    }
+    
+                    &-slider {
+                        overflow: visible;
+                    }
+                }
+    
+                .carousel-status {
+                    display: none;
+                }
+    
+                .control-arrow {
+                    display: none;
+                }
+    
+                .control-dots {
+                    display: none;
+                }
+            }
+
     
             .review {
                 padding: 2.6vw 3vw;
@@ -951,75 +980,10 @@ main.home {
             }
         }
     }
-    
+
     .banner {
         .container {
             padding: 14vw 0;
-        }
-        
-        &__block {
-            position: relative;
-            border-radius: 2.08vw;
-            background-image: url('icons/backgroud.svg');
-            background-size: contain;
-            background-color: variables.$purple-1;
-            padding: 2.569vw 0 4.23vw 4.6vw;
-            display: flex;
-            flex-direction: column;
-            gap: .625vw;
-            animation: backgroundAnim 15s infinite;
-            
-            h2 {
-                opacity: 0.8;
-                color: variables.$white-1;
-                font-family: 'Poppins';
-                font-size: 4.8vw;
-                font-weight: 800;
-            }
-            
-            form {
-                opacity: 0.8;
-                width: 30.5vw;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                border-radius: 1vw;
-                background: #FFF;
-                box-shadow: 0px 7.253333568572998px 45.333335876464844px 0px rgba(0, 0, 0, 0.10);
-                padding: 0.5vw 0.4vw 0.5vw 1.51vw;
-    
-                input {
-                    color: #878787;
-                    font-family: 'Poppins';
-                    font-size: 1.125vw;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.031vw;
-                    text-transform: capitalize;
-                }
-    
-                button {
-                    color: variables.$white-4;
-                    font-family: 'Poppins';
-                    font-size: 1vw;
-                    font-weight: 500;
-                    letter-spacing: 0.0307vw;
-                    text-transform: uppercase;
-    
-                    &:hover {
-                        color: variables.$purple-1;
-                    }
-                }
-            }
-    
-            img {
-                position: absolute;
-                right: 5vw;
-                bottom: -4.5vw;
-                width: 19vw;
-                animation: rotate 7s infinite;
-            }
         }
     }
 }

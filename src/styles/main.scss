@@ -6,10 +6,15 @@
 
 @import './components/button';
 @import './components/view-all';
+@import './components/expand-button';
+@import './components/banner';
 
 @import './layout/layout';
 
+@import './sections/FAQ';
+
 @import './pages/home';
 @import './pages/menu';
+@import './pages/blog';
 
 @import './media/media';

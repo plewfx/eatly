@@ -6,24 +6,17 @@
     justify-content: center;
     cursor: pointer;
     padding: 1.23vw 1.85vw;
-
-    a {
-        font-size: 1.25vw;
-        font-weight: 700;
-        line-height: 1.85vw;
-    }
+    font-size: 1.25vw;
+    font-weight: 700;
+    line-height: 1.85vw;
 }
 
 .button__login {
-    a {
-        color: #606060;
-    }
+    color: #606060;
     
     &:hover {
-        a {
-            color: variables.$purple-1;
-            text-decoration: underline;
-        }
+        color: variables.$purple-1;
+        text-decoration: underline;
     }
 
     @extend %button;
@@ -33,16 +26,10 @@
     border-radius: 1.25vw;
     background-color: variables.$purple-1;
     border: 0.07vw solid variables.$purple-1;
-
-    a {
-        color: variables.$white-2;
-    }
+    color: variables.$white-2;
 
     &:hover {
-        a {
-            color: variables.$purple-1;
-        }
-        
+        color: variables.$purple-1;
         background-color: variables.$white-2;
     }
 
@@ -53,17 +40,11 @@
     border-radius: 1.25vw;
     background-color: variables.$white-2;
     border: 0.07vw solid variables.$purple-1;
-
-    a {
-        color: variables.$purple-1;
-    }
-
+    color: variables.$purple-1;
+    
     &:hover {
+        color: variables.$white-2;
         background-color: variables.$purple-1;
-
-        a {
-            color: variables.$white-2;
-        }
     }
     
     @extend %button; 
