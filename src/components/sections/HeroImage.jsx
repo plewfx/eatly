@@ -59,7 +59,7 @@ const HeroImage = () => {
                     </svg>
                 </div>
                 <div className="order box-shadow">
-                    <Link to='/menu' data-aos="fade-right" data-aos-delay="500">
+                    <Link to='/eatly/menu' data-aos="fade-right" data-aos-delay="500">
                         <img src="/src/assets/home/food.png" alt="" />
                         <div className="text">
                             <p>Chicken Hell</p>

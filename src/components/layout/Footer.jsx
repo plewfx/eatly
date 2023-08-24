@@ -8,10 +8,10 @@ const Footer = () => {
                 <div className="footer__line1">
                     <Logo />
                     <div className="footer__nav">
-                        <NavLink data-aos="fade-right" data-aos-delay="300" className='nav__link' to='/menu'>Menu</NavLink>
-                        <NavLink data-aos="fade-right" data-aos-delay="400" className='nav__link' to='/blog'>Blog</NavLink>
-                        <NavLink data-aos="fade-right" data-aos-delay="500" className='nav__link' to='/about'>About us</NavLink>
-                        <NavLink data-aos="fade-right" data-aos-delay="600" className='nav__link' to='/contact'>Contact</NavLink>
+                        <NavLink data-aos="fade-right" data-aos-delay="300" className='nav__link' to='/eatly/menu'>Menu</NavLink>
+                        <NavLink data-aos="fade-right" data-aos-delay="400" className='nav__link' to='/eatly/blog'>Blog</NavLink>
+                        <NavLink data-aos="fade-right" data-aos-delay="500" className='nav__link' to='/eatly/about'>About us</NavLink>
+                        <NavLink data-aos="fade-right" data-aos-delay="600" className='nav__link' to='/eatly/contact'>Contact</NavLink>
                     </div>
                 </div>
                 <div className="stick"></div>

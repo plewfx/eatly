@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/eatly" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="menu" element={<Menu />} />
           <Route path="blog" element={<Blog />} />

@@ -30,10 +30,10 @@ const HomeHero = () => {
                     </div>
                     <div className="hero__actions">
                         <div className="hero__buttons">
-                            <Link to='/pricing' className="button__simple">
+                            <Link to='/eatly/pricing' className="button__simple">
                                 Get Started
                             </Link>
-                            <Link to='/pricing' className="button__out">
+                            <Link to='/eatly/pricing' className="button__out">
                                 Go Pro
                             </Link>
                         </div>
