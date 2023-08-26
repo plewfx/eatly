@@ -1,5 +1,4 @@
 import { useParams, Link } from "react-router-dom";
-import { useState } from "react";
 import { articlesData } from "../data";
 import Article from "../components/child/Article";
 
@@ -59,7 +58,6 @@ const ArticleDetail = () => {
                             {
                                 articlesData.map(article => {
                                     articleCount++
-                                    console.log(articleCount)
 
                                     if(articleCount <= 3) {
                                         return (

@@ -1,0 +1,85 @@
+@use '../abstracts/variables';
+
+.restaurant-detail {
+    @media (max-width: 700px) {
+        .restaurant-info {
+            padding: 16vw 0;
+    
+            .container {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 1.3vw 13vw 8vw 0vw rgba(229, 229, 229, 0.70);
+            }
+            
+            &__image {
+                border-radius: 6.36vw 6.36vw 0px 0px;
+                height: 37.3vw;
+            }
+            
+            &__text {
+                border-radius: 0px 0px 6.36vw 6.36vw;
+                padding: 2.08vw 3vw 2.43vw 3.2vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h4 {
+                    font-size: 5.46vw;
+                    line-height: 162.5%;
+                }
+            }
+            
+            &__rating {
+                display: flex;
+                align-items: center;
+                gap: .5vw;
+            
+                p {
+                    color: variables.$grey-6;
+                    font-size: 5vw;
+                }
+            
+                img {
+                    width: 5vw;
+                    height: 5vw;
+                }
+            }
+    
+            button {
+                position: absolute;
+                right: 3vw;
+                bottom:  2.43vw;
+                padding: 2.1vw 2.38vw;
+                border-radius: 50%;
+                transition: .9s;
+    
+                img {
+                    height: 4.3vw;
+                }
+            }
+        }
+    
+        .popular-dishes {
+            .container {
+                padding: 12vw 0;
+                gap: 13.33vw;
+            }
+        }
+    
+        .chicken {
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 15vw;
+                padding: 16vw 0 26vw 0;
+                border-bottom: 0.2666vw solid variables.$grey-border;
+            }
+        }
+    
+        .dishes__list {
+            justify-content: space-between;
+            row-gap: 13vw;
+        }        
+    }
+}

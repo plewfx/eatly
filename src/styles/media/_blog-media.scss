@@ -1,0 +1,67 @@
+@use '../abstracts/variables';
+
+main.blog {
+    @media (max-width: 700px) {
+        .articles {
+            .container {
+                padding: 0vw 0;
+                gap: 16vw;
+    
+                h3 {
+                    font-size: 6.8vw;
+                    line-height: 120%;
+                }
+            }
+    
+            &__list {
+                justify-content: center;
+                row-gap: 13.3vw;
+    
+                .article {
+                    gap: 4vw;
+                    border-radius: 3vw;
+                    padding: 5vw 4vw 6.5vw;
+                    box-shadow: 0px 0.37vw 10vw 0px rgba(50, 49, 66, .2);
+    
+                    &__img {
+                        width: 56.5vw;
+                    }
+    
+                    &__detail {
+                        gap: 4vw;
+    
+                        &-profile {
+                            column-gap: 2vw;
+    
+                            img {
+                                width: 8vw;
+                            }
+    
+                            p {
+                                font-size: 2.5vw;
+                            }
+    
+                            h6 {
+                                font-size: 3vw;
+                            }
+                        }
+    
+                        span {
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+    
+            &__controls {
+                gap: 5.55vw;
+            }
+        }
+    
+        .faq {
+            .container {
+                padding: 30vw 0 27vw 0;
+            }
+        }
+    }
+}

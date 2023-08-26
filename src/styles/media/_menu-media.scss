@@ -206,179 +206,12 @@ main.menu {
         .restaurants {
             .container {
                 padding: 22.4vw 0 17.6vw 0;
-                gap: 15.7vw;
-                border-bottom: 0.2666vw solid variables.$grey-border;
-                
-                h3 {
-                    text-align: center;
-                    font-size: 8vw;
-                    line-height: 120%;
-                }
             }
-
-            &__text {
-                justify-content: center;
-            }
-            
-            &__list {
-                flex-direction: column;    
-                gap: 10.6vw;
-            }
-        
-            .restaurant {
-                border-radius: 6.34vw;
-        
-                &__image {
-                    img {
-                        border-radius: 2.1vw 2.1vw 0 0;
-                        width: 84vw;
-                        height: 37.3vw;
-                    }
-                }
-        
-                &__info {
-                    padding: 2.32vw 0 3.8vw 7.22vw;
-        
-                    .healthy {
-                        font-size: 2.66vw;
-                        padding: 0.65vw 1.73vw 0.4vw 1.8vw;
-                        border-radius: 1.14vw;
-                    }
-                    
-                    .trending {
-                        font-size: 2.66vw;
-                        padding: 0.65vw 1.73vw 0.4vw 1.8vw;
-                        border-radius: 1.14vw;
-                    }
-                }
-        
-                &__desc {
-                    gap: 0.21vw;
-
-                    h5 {
-                        font-size: 5.46vw;
-                    }
-                }
-        
-                &__rating {
-                    gap: 1.33vw;
-        
-                    p {
-                        color: variables.$grey-6;
-                        font-size: 4vw;
-                        font-weight: 400;
-                        line-height: 133.333%;
-                    }
-        
-                    img {
-                        width: 5.33vw;
-                        height: 5.33vw;
-                    }
-                }
-                svg {
-                    height: 8.5vw;
-                    position: absolute;
-                    bottom: 3.6vw;
-                    right: 4.7vw;
-                }
-            } 
         }
     
         .dishes {
             .container {
                 padding: 22.6vw 0 17.6vw 0;
-                gap: 16.2vw;
-                border-bottom: 0.2666vw solid variables.$grey-border;
-
-                h3 {
-                    text-align: center;
-                    font-size: 8vw;
-                    line-height: 120%;
-                }
-            }
-
-            &__text {
-                justify-content: center;
-            }
-        
-            &__list {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                column-gap: 5.6vw;
-                row-gap: 12vw;
-        
-                .dish {
-                    border-radius: 6.02vw;
-                    border: 0.2666vw solid variables.$white-2;
-                    padding: 4.53vw 3.1vw 5.06vw 1vw;
-        
-                    &__add {
-                        position: absolute;
-                        top: 4.13vw;
-                        right: 4vw;
-                        width: 3.8vw;
-        
-                        svg {
-                            cursor: pointer;
-                            width: 100%;
-                        }
-                    }
-        
-                    &__img {
-                        width: 35vw;
-                    }
-        
-                    &__text {
-                        gap: 2.26vw;
-                        padding: 0 0 4vw 5.14vw;
-                    }
-        
-                    &__info {
-                        &-title {               
-                            p {
-                                padding: 0.48vw 1.28vw 0.266vw 1.33vw;
-                                font-size: 2vw;
-                                border-radius: 0.84vw;
-                            }
-        
-                            h5 {
-                                font-size: 4vw;
-                            }
-                        }
-        
-                        &-rating {
-                            display: flex;
-                            gap: 1vw;
-                            align-items: center;
-        
-                            img {
-                                width: 4vw;
-                                height: 4vw;
-                            }
-        
-                            p {
-                                font-size: 3vw;
-                                line-height: 133.333%;
-                            }
-                        }
-                    }
-        
-                    &__price {
-                        .prices {
-                            &-main {
-                                font-size: 4.5vw;
-                            }
-                            
-                            &-lil {
-                                font-size: 3.28vw;
-                            }
-                        }
-                        svg {
-                            width: 7.62vw;
-                            margin-right: 4.8vw;
-                        }
-                    }
-                }
             }
         }
     
@@ -389,28 +222,7 @@ main.menu {
                 display: flex;
                 flex-direction: column;
                 gap: 17.8vw;
-    
-                .css-15v22id-MuiAccordionDetails-root p {
-                    font-size: 2.9vw;
-                    letter-spacing: 0.03vw;
-                }
-    
-                .css-ahj2mt-MuiTypography-root {
-                    font-size: 3.28vw;
-                }
-    
-                svg {
-                    position: absolute;
-                    top: 18vw;
-                    left: 78.5vw;
-                    width: 5.73vw;
-                }
             }
-    
-            h3 {
-                text-align: center;
-                line-height: 120%;
-            }
-        }        
+        }
     }
 }

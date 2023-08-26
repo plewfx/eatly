@@ -1,0 +1,98 @@
+@use '../abstracts/variables';
+
+.article-detail {
+    @media (max-width: 700px) {
+        gap: 13.33vw;
+    
+        &__head {
+            .container {
+                padding-top: 20vw;
+            }
+        
+            &-info {                
+                h4 {
+                    margin-bottom: 7vw;
+                }
+            }
+
+            &-img {
+                margin-top: 14vw;
+                width: 100%;
+                height: 89vw;
+            }
+        
+            &-profile {
+                column-gap: 2.5vw;
+    
+                img {
+                    width: 10vw;
+                }
+    
+                p {
+                    font-size: 2.8vw;
+                }
+    
+                h6 {
+                    font-size: 4.1vw;
+                }
+            }
+        }
+    
+        &__main {
+            .container {
+                display: flex;
+                gap: 0vw;
+            }
+    
+            &-headings {
+                display: flex;
+                flex-direction: column;
+                gap: 15vw;
+    
+                .heading {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.9vw;
+    
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5vw;
+                        padding-left: 1.3vw;
+                    }
+    
+                    p, ul li {
+                        font-size: 3vw;
+                    }
+                }
+            }
+    
+            &-more {
+                display: none;
+            }
+        }
+    
+        &__controls {     
+            .container {
+                padding-bottom: 25vw;
+    
+                a {
+                    padding: 3.7vw 5.4vw;
+                    font-size: 3vw;
+                    gap: 4.5vw;
+    
+                    svg {
+                        width: 5vw;
+                        height: 5.1vw;
+                    }
+    
+                    &.disabled {
+                        pointer-events: none;
+                        background-color: #B4A7FF;
+                        border: 0.2666vw solid #B4A7FF;
+                    }
+                }
+            }
+        }        
+    }
+}

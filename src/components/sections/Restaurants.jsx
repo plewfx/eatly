@@ -1,11 +1,13 @@
 import Restaurant from "../child/Restaurant";
-import { restaurantData } from "../../data";
+import useRestaurantsStore from "../../useRestaurantStore";
 import ViewAll from "../UI/ViewAll";
 import useScreenSizeStore from "../../useScreenSizeStore";
 import { useEffect} from "react";
 
 const Restaurants = () => {
-    const restaurantList = restaurantData.map(restaurant => {
+    const restaurants = useRestaurantsStore(set => set.restaurants)
+    
+    const restaurantList = restaurants.map(restaurant => {
         return (
             <Restaurant
                 key={restaurant.id}
@@ -15,6 +17,8 @@ const Restaurants = () => {
                 img={restaurant.img}
                 time={restaurant.time}
                 rating={restaurant.rating}
+                marked={restaurant.marked}
+                setMarked={restaurant.setMarked}
             />
         )
     })

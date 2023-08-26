@@ -742,40 +742,6 @@ main.home {
             .container {
                 padding: 21.3vw 0 53.3vw 0;
             }
-            
-            &__block {
-                border-radius: 4vw;
-                padding: 9.5vw 7.3vw 25.4vw 7.3vw;
-                gap: 4.26vw;
-                align-items: center;
-                justify-content: space-between;
-                
-                h2 {
-                    font-size: 11vw;
-                }
-                
-                form {
-                    width: 69.3vw;
-                    border-radius: 2.45vw;
-                    padding: 1.92vw 2vw 1.6vw 3.73vw;
-        
-                    input {
-                        font-size: 2.82vw;
-                        letter-spacing: 0.084vw;
-                    }
-        
-                    button {
-                        font-size: 2.56vw;
-                        letter-spacing: 0.076vw;
-                    }
-                }
-        
-                img {
-                    right: 19vw;
-                    bottom: -25.5vw;
-                    width: 45.3vw;
-                }
-            }
         }
     }
 }
