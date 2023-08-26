@@ -407,12 +407,21 @@ main.home {
     
     .restaurants {
         .container {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 6.944vw 0 8.33vw 0;
+            padding: 6.944vw 0 15vw 0;
             gap: 6vw;
             border-bottom: 0.07vw solid variables.$grey-border;
+        }
+
+        &__text {
+            .view-all {
+                position: absolute;
+                right: 0vw;
+                bottom: 8vw;
+            }
         }
         
         &__list {    
@@ -499,12 +508,21 @@ main.home {
     
     .dishes {
         .container {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 6.944vw 0 8.33vw 0;
+            padding: 6.944vw 0 15vw 0;
             gap: 6vw;
             border-bottom: 0.07vw solid variables.$grey-border;
+        }
+
+        &__text {
+            .view-all {
+                position: absolute;
+                right: 0vw;
+                bottom: 8vw;
+            }
         }
     
         &__list {

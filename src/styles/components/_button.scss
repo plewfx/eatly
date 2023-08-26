@@ -5,8 +5,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 1.23vw 1.85vw;
-    font-size: 1.25vw;
+    padding: 0.9vw 1.5vw;
     font-weight: 700;
     line-height: 1.85vw;
 }
@@ -31,6 +30,10 @@
     &:hover {
         color: variables.$purple-1;
         background-color: variables.$white-2;
+
+        svg {
+            fill: variables.$purple-1;
+        }
     }
 
     @extend %button; 

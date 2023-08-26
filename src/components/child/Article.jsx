@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Article = ({ id, name, date, profile }) => {
   return (
-    <Link to={`/eatly/blog/${id}`} className='article'>
+    <Link data-aos='fade-right' data-aos-delay={id * 100} to={`/eatly/blog/${id}`} className='article'>
         <img className="article__img" src={'/eatly/src/assets/articles/' + id + '.png'} alt={name} />
         <div className="article__detail">
             <h6>{name}</h6>

@@ -8,12 +8,12 @@ const FAQ = () => {
     return (
         <section className="faq">
             <div className="container">
-                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="45" viewBox="0 0 47 45" fill="none">
+                <svg data-aos='fade-up-left' data-aos-delay='100' xmlns="http://www.w3.org/2000/svg" width="47" height="45" viewBox="0 0 47 45" fill="none">
                     <path d="M16.6667 3C11.7046 10.8359 7.61367 19.1607 3 27.2031" stroke="#6C5FBC" strokeWidth="4.78333" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M41.2668 3C29.5782 12.2437 18.6728 22.9633 8.4668 33.9261" stroke="#6C5FBC" strokeWidth="4.78333" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     <path d="M43.9997 28.5479C34.4604 30.2883 21.784 37.516 12.5664 41.994" stroke="#6C5FBC" strokeWidth="4.78333" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <h3>Frequently Asked <br /><span>Questions</span></h3>
+                <h3 data-aos='fade-up' data-aos-delay='100'>Frequently Asked <br /><span>Questions</span></h3>
                 <div className="questions">
                     <Accordion>
                         <AccordionSummary

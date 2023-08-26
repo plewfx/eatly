@@ -189,8 +189,7 @@ button, select, option, input {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 1.23vw 1.85vw;
-  font-size: 1.25vw;
+  padding: 0.9vw 1.5vw;
   font-weight: 700;
   line-height: 1.85vw;
 }
@@ -212,6 +211,9 @@ button, select, option, input {
 .button__simple:hover {
   color: #6C5FBC;
   background-color: #F9F9F9;
+}
+.button__simple:hover svg {
+  fill: #6C5FBC;
 }
 
 .button__out {
@@ -269,7 +271,7 @@ a.view-all:hover svg {
   width: 0.73vw;
   height: 0.73vw;
   content: "";
-  background-image: url("/icons/plus.svg");
+  background-image: url("/eatly/src/assets/icons/plus.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -552,6 +554,26 @@ main {
   line-height: 119%;
   margin-bottom: 2.22vw;
 }
+.article-detail__head-profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+.article-detail__head-profile img {
+  width: 4vw;
+  grid-row: 1/3;
+}
+.article-detail__head-profile p {
+  color: #676767;
+  font-family: "Poppins";
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+.article-detail__head-profile h6 {
+  font-size: 1.5vw;
+  line-height: 153%;
+}
 .article-detail__head-img {
   margin-top: 4.44vw;
   background-size: cover;
@@ -586,6 +608,7 @@ main {
 }
 .article-detail__main .container {
   display: flex;
+  gap: 5vw;
 }
 .article-detail__main-headings {
   display: flex;
@@ -604,18 +627,93 @@ main {
   padding-left: 1.3vw;
 }
 .article-detail__main-headings .heading p, .article-detail__main-headings .heading ul li {
+  line-height: 202%;
   font-size: 1.5vw;
 }
 .article-detail__main-more {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2.5vw;
+  border-left: 0.07vw solid #606060;
+  padding-left: 4.5vw;
 }
-.article-detail__main-more .article {
+.article-detail__main-more h4 {
+  font-size: 2.08vw;
+  line-height: 150%;
+}
+.article-detail__main-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+.article-detail__main-list .article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1vw;
+  border-radius: 0.9vw;
   padding: 1.5vw 1.1vw 1.9vw;
+  background-color: #ffffff;
+  box-shadow: 0px 0.37vw 3.25vw 0px rgba(50, 49, 66, 0.2);
+}
+.article-detail__main-list .article__img {
+  width: 18.3vw;
+}
+.article-detail__main-list .article__detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2vw;
+}
+.article-detail__main-list .article__detail-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.article-detail__main-list .article__detail-profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  -moz-column-gap: 0.4vw;
+       column-gap: 0.4vw;
+}
+.article-detail__main-list .article__detail-profile img {
+  width: 2.5vw;
+  grid-row: 1/3;
+}
+.article-detail__main-list .article__detail-profile p {
+  color: #676767;
+  font-family: "Poppins";
+  font-size: 0.7vw;
+  font-weight: 400;
+}
+.article-detail__main-list .article__detail-profile h6 {
+  font-size: 1vw;
+  line-height: 153%;
+}
+.article-detail__main-list .article__detail span {
+  font-size: 0.9vw;
+  color: #676767;
 }
 .article-detail__controls .container {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 11.6vw;
+}
+.article-detail__controls .container a {
+  padding: 1.7vw 1.8vw;
+  font-size: 1.5vw;
+  display: flex;
+  gap: 2vw;
+}
+.article-detail__controls .container a svg {
+  width: 2.1vw;
+  height: 2.4vw;
+}
+.article-detail__controls .container a.disabled {
+  pointer-events: none;
+  background-color: #B4A7FF;
+  border: 0.07vw solid #B4A7FF;
 }
 
 main.home .hero .container {
@@ -957,12 +1055,18 @@ main.home .mobile__text ul li::marker {
   margin-left: 10px;
 }
 main.home .restaurants .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6.944vw 0 8.33vw 0;
+  padding: 6.944vw 0 15vw 0;
   gap: 6vw;
   border-bottom: 0.07vw solid #CBCBCB;
+}
+main.home .restaurants__text .view-all {
+  position: absolute;
+  right: 0vw;
+  bottom: 8vw;
 }
 main.home .restaurants__list {
   display: flex;
@@ -1033,12 +1137,18 @@ main.home .restaurants .restaurant svg {
   right: 1.9vw;
 }
 main.home .dishes .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6.944vw 0 8.33vw 0;
+  padding: 6.944vw 0 15vw 0;
   gap: 6vw;
   border-bottom: 0.07vw solid #CBCBCB;
+}
+main.home .dishes__text .view-all {
+  position: absolute;
+  right: 0vw;
+  bottom: 8vw;
 }
 main.home .dishes__list {
   display: flex;
@@ -1517,7 +1627,7 @@ main.menu .hero__banners-list .control-dots .dot.selected {
 main.menu .hero__banner {
   position: relative;
   border-radius: 1.3vw;
-  background-image: url("icons/backgroud.svg");
+  background-image: url("/eatly/src/assets/icons/background.svg");
   background-size: contain;
   background-color: #6C5FBC;
   padding: 4.16vw;
@@ -1995,6 +2105,7 @@ main.blog .articles__list .article__detail-profile {
        column-gap: 0.8vw;
 }
 main.blog .articles__list .article__detail-profile img {
+  width: 3vw;
   grid-row: 1/3;
 }
 main.blog .articles__list .article__detail-profile p {
@@ -2077,14 +2188,12 @@ main.blog .faq .container svg {
   .header__autho a {
     border-radius: 2.666vw;
     padding: 3.8vw 6.66vw 3.46vw 6.4vw;
-  }
-  .header__autho a a {
-    font-size: 8vw;
+    font-size: 7vw;
     line-height: 10vw;
     letter-spacing: 0.0346vw;
   }
   .header__autho.active {
-    right: 20%;
+    right: 30vw;
   }
   .header__burger {
     display: flex;

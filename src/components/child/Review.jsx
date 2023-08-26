@@ -8,7 +8,7 @@ const generateStars = (count) => {
 
 const Review = ({ id, img, name, date, text, rating }) => {
     return (
-        <div className="review box-shadow" data-aos='fade-right' data-aos-delay={id * 100}>
+        <div className="review" data-aos='fade-right' data-aos-delay={id * 100}>
             <div className="review__header">
                 <div className="review__header-profile">
                     <img src={'/eatly/src/assets/' + img + '.png'} alt={name} />

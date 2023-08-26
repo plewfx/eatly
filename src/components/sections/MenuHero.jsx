@@ -21,6 +21,7 @@ const MenuHero = () => {
         return (
             <Category
                 key={cat.id}
+                id={cat.id}
                 name={cat.name}
                 img={cat.img}
             />
@@ -64,12 +65,12 @@ const MenuHero = () => {
         <section className="hero">
             <div className="container">
                 <div className="hero__banners">
-                    <svg xmlns="http:/www.w3.org/2000/svg" width="43" height="36" viewBox="0 0 43 36" fill="none">
+                    <svg data-aos='fade-left' xmlns="http:/www.w3.org/2000/svg" width="43" height="36" viewBox="0 0 43 36" fill="none">
                         <path d="M16.749 7.74478C12.2404 11.8023 8.41586 16.1642 4.18022 20.3494" stroke="#685BB8" strokeWidth="2.72368" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M37.0643 8.45488C27.0652 13.0255 17.6147 18.4398 8.71608 24.0177" stroke="#685BB8" strokeWidth="2.72368" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                         <path d="M38.5293 23.1181C30.393 23.5896 19.3126 26.7545 11.298 28.6542" stroke="#685BB8" strokeWidth="2.72368" strokeMiterlimit="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <div className="hero__banners-list">
+                    <div data-aos='fade-right' className="hero__banners-list">
                         <Carousel autoPlay={true} infiniteLoop={true}>
                             <div className="hero__banner">
                                 <div className="hero__banner-desc">
@@ -96,18 +97,19 @@ const MenuHero = () => {
                 </div>
                 <form className="hero__sort">
                     <div className="hero__sort-category">
-                        <h5>Category</h5>
+                        <h5 data-aos='fade-up' data-aos-delay='100'>Category</h5>
                         <div className="hero__sort-category-list">
                             {categoryList}
                         </div>
                     </div>
                     <div className="hero__sort-by">
-                    <h5>Sort By</h5>
+                    <h5 data-aos='fade-up' data-aos-delay='200'>Sort By</h5>
                     <div className="hero__sort-by-list">
                         {sort.map(sor => {
                             return (
                                 <Sort
                                     key={sor.id}
+                                    id={sor.id}
                                     text={sor.text}
                                 />
                             )
@@ -115,9 +117,11 @@ const MenuHero = () => {
                     </div>
                     </div>
                     <div className="hero__sort-price">
-                        <h5>Price</h5>
+                        <h5 data-aos='fade-up' data-aos-delay='400'>Price</h5>
                         <div className="hero__sort-price-slider">
                             <Slider
+                                data-aos='fade-up'
+                                data-aos-delay='500'
                                 aria-label="Custom marks"
                                 defaultValue={25}
                                 getAriaValueText={valuetext}
@@ -127,17 +131,17 @@ const MenuHero = () => {
                             />
                         </div>
                     </div>
-                    <button>Apply</button>
+                    <button data-aos='fade-up' data-aos-delay='600'>Apply</button>
                 </form>
                 <form className="hero__search">
-                    <div className="hero__search-input">
+                    <div data-aos='fade-right' data-aos-delay='700' className="hero__search-input">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                             <circle cx="15.1401" cy="15" r="9.37834" transform="rotate(-45 15.1401 15)" stroke="#C2C3CB" strokeWidth="2"/>
                             <path d="M22.5112 21.9678L27.2549 26.6003" stroke="#C2C3CB" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                         <input type="text" placeholder='Search' />
                     </div>
-                    <div className="hero__search-buttons">
+                    <div data-aos='fade-right' data-aos-delay='800' className="hero__search-buttons">
                         <div onClick={() => setActiveButton(prev => prev = 0)} className={activeButton === 0 ? 'button active' : 'button'}>
                             Food
                         </div>

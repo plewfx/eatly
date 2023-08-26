@@ -8,7 +8,7 @@ const Articles = () => {
     return (
         <section className="articles">
             <div className="container">
-                <h3>Latest <span>Articles</span></h3>
+                <h3  data-aos='fade-up' data-aos-delay='100'>Latest <span>Articles</span></h3>
                 <div className="articles__list">
                     {
                         articlesData.map(article => {
