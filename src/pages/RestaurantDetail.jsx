@@ -27,7 +27,7 @@ const RestaurantDetail = () => {
                         <h4 data-aos='fade-right' data-aos-delay='200'>{name}</h4>
                         <div className="restaurant-info__rating">
                             <p data-aos='fade-right' data-aos-delay='300'>{time}min •</p>
-                            <img data-aos='fade-right' data-aos-delay='400' src="/eatly/src/assets/icons/star.svg" alt="" />
+                            <img data-aos='fade-right' data-aos-delay='400' src="../assets/icons/star.svg" alt="" />
                             <p data-aos='fade-right' data-aos-delay='500'>{rating}</p>
                         </div>
                         <button onClick={() => setBookMarked(prev => !prev)} className={bookMarked && 'active'}>
