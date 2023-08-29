@@ -4,7 +4,6 @@ import { useState } from "react";
 import useScreenSizeStore from '../useScreenSizeStore'
 import Dish from '../components/child/Dish'
 import FAQ from '../components/sections/FAQ'
-import star from '../assets/icons/star.svg'
  
 const RestaurantDetail = () => {
     const screenSize = useScreenSizeStore(set => set.screenSize)
@@ -28,7 +27,7 @@ const RestaurantDetail = () => {
                         <h4 data-aos='fade-right' data-aos-delay='200'>{name}</h4>
                         <div className="restaurant-info__rating">
                             <p data-aos='fade-right' data-aos-delay='300'>{time}min •</p>
-                            <img data-aos='fade-right' data-aos-delay='400' src={star} alt="" />
+                            <img data-aos='fade-right' data-aos-delay='400' src='../assets/icons/star.svg' alt="" />
                             <p data-aos='fade-right' data-aos-delay='500'>{rating}</p>
                         </div>
                         <button onClick={() => setBookMarked(prev => !prev)} className={bookMarked && 'active'}>
