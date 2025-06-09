@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/eatly/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />}/>
           <Route path="menu" element={<Menu />} />
           <Route path='menu/:id' element={<RestaurantDetail />}/>
