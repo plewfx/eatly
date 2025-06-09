@@ -1,0 +1,369 @@
+@use '../abstracts/variables';
+
+main.menu {
+    p {
+        color: variables.$grey-2;
+        font-weight: 400;
+    
+        &.hero {
+            opacity: 0.7;
+            font-size: 1.25vw;
+            line-height: 155.556%;
+            padding: 0;
+    
+            & span {
+                color: #6155AE;
+            }
+        }
+    }
+
+    .hero {
+        .container {
+            padding-top: 6vw;
+            display: grid;
+            grid-template-columns: 52.5vw 26.1vw;
+            grid-template-rows: 21.3vw 12.8vw;
+            column-gap: 7.77vw;
+            row-gap: 6.11vw;
+        }
+
+        &__banners {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            svg {
+                position: absolute;
+                width: 3.6vw;
+                right: -3vw;
+                top: -1.5vw;
+            }
+
+            &-list {
+                .carousel:nth-child(2) {
+                    display: none;
+                }
+
+                .carousel {
+                    border-radius: 1.3vw;
+                    .slide {
+                        text-align: left;
+                    }
+
+                    &-slider {
+                        overflow: visible;
+                    }
+                }
+
+                .carousel-status {
+                    display: none;
+                }
+
+                .control-arrow {
+                    display: none;
+                }
+
+                .control-dots {
+                    width: 9.4vw;
+                    display: flex;
+                    bottom: -3.47vw;
+                    left: 40%;
+                    margin: 0 auto;
+                    gap: 0.52vw;
+
+                    .dot {
+                        background: #dbd9ee;
+                        margin: 0;
+                        opacity: 1;
+                        box-shadow: none;
+                        flex: 1 1 auto;
+                        height: 0.4vw;
+                        border-radius: 3.8vw;
+                        transition: .3s;
+
+                        &.selected {
+                            flex: 2 1 auto;
+                            background: variables.$purple-1;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__banner {
+            position: relative;
+            border-radius: 1.3vw;
+            background-image: url('/src/assets/icons/background.svg');
+            background-size: contain;
+            background-color: variables.$purple-1;
+            padding: 4.16vw;
+            animation: backgroundAnim 15s infinite;
+
+            &-desc {
+                h1 {
+                    color: variables.$white-4;
+                    font-family: 'Poppins';
+                    font-size: 5.2vw;
+                    line-height: 85%;
+                    font-weight: 800;
+
+                    &:nth-child(2) {
+                        font-size: 6.07vw;
+                        color: #7C6FCD;
+                    }
+                }
+            }
+
+            img {
+                position: absolute;
+                right: 2.47vw;
+                bottom: -3.6vw;
+                width: 17.6vw;
+                animation: rotate 7s infinite;
+            }
+        }
+
+        &__sort {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+            border-radius: 1.65vw;
+            background: variables.$white-1;
+            box-shadow: 5.71212100982666px 9.520201683044434px 28.560604095458984px 0.9520201683044434px rgba(108, 95, 188, 0.12);
+            padding: 2.22vw 2.22vw 2.7vw 2.22vw;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            &-category {
+                display: flex;
+                flex-direction: column;
+                gap: 1.21vw;
+
+                h5 {
+                    color: variables.$dark-3;
+                    font-family: Poppins;
+                    font-size: 1.48vw;
+                    font-weight: 600;
+                    line-height: 134%;
+                }
+
+                &-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.89vw;
+
+                    .category {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        height: 6.66vw;
+                        width: 4.59vw;
+                        filter: drop-shadow(0px 14.71010684967041px 22.065160751342773px rgba(135, 125, 200, 0.25));
+                        border-radius: 1.021vw;
+                        transition: .2s;
+                        cursor: pointer;
+
+                        h6 {
+                            font-size: 0.817vw;
+                        }
+
+                        &.Pizza {
+                            background-color: rgba(255, 222, 138, 0.35);
+                            gap: 1.18vw;
+                            color: #D69900;
+
+                            &.active {
+                                border: 0.26vw solid #D69900;
+                            }
+
+                            img {
+                                width: 2.4vw;
+                            }
+                        }
+                        
+                        &.Asian {
+                            background-color: rgba(247, 197, 186, 1);;
+                            gap: 0.56vw;
+                            color: #FB471D;
+                            
+                            &.active {
+                                border: 0.26vw solid rgba(251, 71, 29, 0.50);
+                            }
+
+                            img {
+                                width: 3.125vw;
+                            }
+                        }
+                        
+                        &.Donat {
+                            background-color: rgba(237, 182, 107, 0.35);
+                            gap: 1.27vw;
+                            color: #E28B14;
+
+                            &.active {
+                                border: 0.26vw solid rgba(226, 139, 20, 0.50);
+                            }
+                            
+                            img {
+                                width: 2.4vw;
+                            }
+                        }
+
+                        &.Ice {
+                            background-color: rgba(90, 133, 255, 0.35);
+                            gap: 0.9vw;
+                            color: #002073;
+
+                            &.active {
+                                border: 0.26vw solid rgba(0, 32, 115, 0.25);
+                            }
+
+                            img {
+                                height: 2.85vw;
+                            }
+                        }
+
+                        &.active {
+                            transform: scale(1.1);
+                            filter: drop-shadow(0px 16.399044036865234px 24.598567962646484px rgba(135, 125, 200, 0.25));
+                            
+                            h6 {
+                                font-size: 0.9vw;                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-by {
+                display: flex;
+                flex-direction: column;
+                gap: 0.9vw;
+
+                h5 {
+                    color: variables.$dark-3;
+                    font-family: Poppins;
+                    font-size: 1.48vw;
+                    font-weight: 600;
+                    line-height: 134%;
+                }
+
+                &-list {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    row-gap: 0.608vw;
+                    p {
+                        cursor: pointer;
+                        color: variables.$grey-3;
+                        font-size: 1.07vw;
+                        font-weight: 500;
+                        line-height: 187.02%;
+
+                        &:nth-child(2) {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+
+            &-price {
+                h5 {
+                    color: variables.$dark-3;
+                    font-family: Poppins;
+                    font-size: 1.52vw;
+                    font-weight: 600;
+                    line-height: 134%;
+                }
+
+                .css-1aznpnh-MuiSlider-root {
+                    color: variables.$purple-1;
+                }
+
+                .css-1eoe787-MuiSlider-markLabel, .css-yafthl-MuiSlider-markLabel {
+                    color: variables.$grey-border;
+                    font-family: Poppins;
+                    font-size: 0.73vw;
+                    font-weight: 500;
+                    line-height: 280.53%;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                padding: 1.35vw;
+                border-radius: 0.94vw;
+                background-color: variables.$purple-1;
+                color: variables.$cream;
+
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+
+        &__search {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-input {
+                display: flex;
+                align-items: center;
+                background-color: #EDEDED;
+                border-radius: 1vw;
+                padding: 1.73vw 27.7vw 1.73vw 1.94vw;
+                font-size: 1.43vw;
+
+                svg {
+                    height: 1.88vw;
+                }
+
+                input {
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    line-height: 117.5%;
+                    letter-spacing: -0.411px;
+                    font-size: 1.42vw;
+                    
+                    &::placeholder {
+                        color: #AAABBA;
+                    }
+                }
+            }
+            
+            &-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                justify-content: center;
+
+                .button {
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 1.45vw 0;
+                    border: 0.152vw solid variables.$purple-1;
+                    border-radius: 1.05vw 0 0 1.05vw;
+                    font-size: 1.347vw;
+                    font-weight: 500;
+                    font-family: 'Poppins';
+                    color: variables.$purple-1;
+                    
+                    &:nth-child(2) {
+                        border-radius: 0 1.05vw 1.05vw 0;                        
+                    }
+
+                    &.active {
+                        color: #F3F5F6;
+                        background-color: variables.$purple-1;
+                    }
+                }
+            }
+        }
+    }
+}

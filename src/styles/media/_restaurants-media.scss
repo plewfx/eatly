@@ -1,0 +1,99 @@
+@use '../abstracts/variables';
+
+.restaurants {
+    @media (max-width: 700px) {
+        .container {
+            padding: 22.4vw 0 17.6vw 0;
+            gap: 15.7vw;
+            border-bottom: 0.2666vw solid variables.$grey-border;
+            
+            h3 {
+                text-align: center;
+                font-size: 8vw;
+                line-height: 120%;
+            }
+        }
+    
+        &__text {
+            justify-content: center;
+        }
+        
+        &__list {
+            flex-direction: column;    
+            gap: 10.6vw;
+        }
+    
+        .restaurant {
+            border-radius: 6.34vw;
+    
+            &__image {
+                img {
+                    border-radius: 2.1vw 2.1vw 0 0;
+                    width: 84vw;
+                    height: 37.3vw;
+                }
+            }
+    
+            &__info {
+                padding: 2.32vw 0 3.8vw 7.22vw;
+    
+            }
+            
+            &__desc {
+                gap: 0.21vw;
+                
+                h5 {
+                    font-size: 5.46vw;
+                }
+            }
+            
+            &__rating {
+                gap: 1.33vw;
+                
+                p {
+                    color: variables.$grey-6;
+                    font-size: 4vw;
+                    font-weight: 400;
+                    line-height: 133.333%;
+                }
+                
+                img {
+                    width: 5.33vw;
+                    height: 5.33vw;
+                }
+            }
+            svg {
+                height: 8.5vw;
+                position: absolute;
+                bottom: 3.6vw;
+                right: 4.7vw;
+            }
+
+            button {
+                position: absolute;
+                bottom: 3.8vw;
+                right: 3.8vw;
+                padding: 2.5vw 3vw;
+
+                img {
+                    height: 5vw;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    .healthy {
+        font-size: 2.66vw;
+        padding: 0.65vw 1.73vw 0.4vw 1.8vw;
+        border-radius: 1.14vw;
+    }
+    
+    .trending {
+        font-size: 2.66vw;
+        padding: 0.65vw 1.73vw 0.4vw 1.8vw;
+        border-radius: 1.14vw;
+    }
+}

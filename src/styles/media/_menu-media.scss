@@ -1,0 +1,228 @@
+@use '../abstracts/variables';
+
+main.menu {
+    @media (max-width: 700px) {
+        p {        
+            &.hero {
+                font-size: 3vw;
+            }
+        }
+    
+        .hero {
+            .container {
+                padding-top: 16.4vw;
+                display: flex;
+                flex-direction: column;
+                gap: 20vw;
+            }
+    
+            &__banners {
+                svg {
+                    width: 5.6vw;
+                    right: -5vw;
+                    top: -6.5vw;
+                }
+    
+                &-list {    
+                    .control-dots {
+                        display: none;
+                    }
+                }
+            }
+    
+            &__banner {
+                border-radius: 2vw;
+                padding: 6.4vw;
+    
+                &-desc {
+                    h1 {
+                        font-size: 8.08vw;
+    
+                        &:nth-child(2) {
+                            font-size: 9.4vw;
+                        }
+                    }
+                }
+    
+                img {
+                    right: 2.47vw;
+                    bottom: -3.6vw;
+                    width: 27.38vw;
+                }
+            }
+    
+            &__sort {
+                gap: 2vw;
+                border-radius: 5.33vw;
+                padding: 7.14vw 7.36vw 8.72vw 7.36vw;
+
+                &:hover {
+                    transform: scale(1);
+                }
+                
+                &-category {
+                    gap: 3.712vw;
+                    
+                    h5 {
+                        font-size: 4.8vw;
+                    }
+                    
+    
+                    &-list {
+                        gap: 2.8vw;
+    
+                        .category {
+                            height: 21.5vw;
+                            width: 14.8vw;
+                            border-radius: 3.28vw;
+
+                            h6 {
+                                font-size: 2.63vw;
+                            }
+    
+                            &.Pizza {
+                                gap: 3.78vw;
+    
+                                img {
+                                    width: 7.73vw;
+                                }
+
+                                &.active {
+                                    border: 0.85vw solid #D69900;
+                                }
+                            }
+                            
+                            &.Asian {
+                                gap: 2.85vw;
+    
+                                img {
+                                    width: 9.5vw;
+                                }
+
+                                &.active {
+                                    border: 0.85vw solid rgba(251, 71, 29, 0.50);
+                                }
+                            }
+                            
+                            &.Donat {
+                                gap: 3.38vw;
+                                
+                                img {
+                                    width: 7.73vw;
+                                }
+
+                                &.active {
+                                    border: 0.85vw solid rgba(226, 139, 20, 0.50);
+                                }
+                            }
+    
+                            &.Ice {
+                                gap: 3.228vw;
+    
+                                img {
+                                    height: 9.2vw;
+                                }
+
+                                &.active {
+                                    border: 0.85vw solid rgba(0, 32, 115, 0.25);
+                                }
+                            }
+    
+                            &.active {
+                                h6 {
+                                    font-size: 2.9vw;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                &-by {
+                    gap: 2.73vw;
+    
+                    h5 {
+                        font-size: 4.8vw;
+                    }
+    
+                    &-list {
+                        row-gap: 1.77vw;
+
+                        p {
+                            font-size: 3.46vw;
+                        }
+                    }
+                }
+    
+                &-price {
+                    h5 {
+                        font-size: 4.9vw;
+                    }
+    
+                    .css-1eoe787-MuiSlider-markLabel, .css-yafthl-MuiSlider-markLabel {
+                        font-size: 2.36vw;
+                    }
+                }
+    
+                button {
+                    font-size: 3vw;
+                    padding: 4.4vw;
+                    border-radius: 3vw;
+                }
+            }
+    
+            &__search {
+                gap: 4.8vw;
+                &-input {
+                    border-radius: 1.68vw;
+                    padding: 3.7vw 56vw 3.7vw 3.7vw;
+                    font-size: 3.2vw;
+    
+                    svg {
+                        width: 3.9vw;
+                        height: 5vw;
+                    }
+    
+                    input {
+                        letter-spacing: -0.064px;
+                        font-size: 3.2vw;
+                    }
+                }
+                
+                &-buttons {
+                    .button {
+                        padding: 4.2vw 0;
+                        border: 0.24vw solid variables.$purple-1;
+                        border-radius: 1.68vw 0 0 1.68vw;
+                        font-size: 3.2vw;
+                        
+                        &:nth-child(2) {
+                            border-radius: 0 1.68vw 1.68vw 0;                        
+                        }
+                    }
+                }
+            }
+        }
+
+        .restaurants {
+            .container {
+                padding: 22.4vw 0 17.6vw 0;
+            }
+        }
+    
+        .dishes {
+            .container {
+                padding: 22.6vw 0 17.6vw 0;
+            }
+        }
+    
+        .faq {
+            .container {
+                position: relative;
+                padding: 24.64vw 0 25.3vw 0;
+                display: flex;
+                flex-direction: column;
+                gap: 17.8vw;
+            }
+        }
+    }
+}

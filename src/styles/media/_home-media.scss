@@ -1,0 +1,747 @@
+@use '../abstracts/variables';
+
+main.home {
+    @media (max-width: 700px) {
+        .hero {
+            .container {
+                padding: 15.2vw 0 24.5vw 0;
+                grid-template-columns: 1fr;
+                gap: 26.66vw;
+            }
+            
+            &__content {
+                gap: 11vw;
+                text-align: center; 
+            }
+        
+            &__text {                
+                align-items: center;
+    
+                h1 {
+                    margin-top: 1.33vw;
+                }
+            }
+            
+            &__subtitle {
+                gap: 3.3vw;
+                font-size: 2.45vw;
+                color: variables.$dark-1;
+
+                &::before {
+                    width: 8.88vw;
+                    height: 0.1645vw;
+                    opacity: 1;
+                }
+            }
+        
+            &__buttons {
+                gap: 3.84vw;
+                justify-content: center;
+                align-items: center;
+                padding: 3.84vw 6.63vw 3.42vw 6.4vw;
+                border-radius: 2.66vw;
+
+                a {
+                    font-size: 3.47vw;
+                    line-height: normal;
+                }
+            }
+        
+            &__actions {
+                gap: 7.04vw;
+            }
+        
+            &__certificate {
+                justify-content: center;
+                gap: 4.26vw;
+        
+                img:nth-child(1) {
+                    width: 26.66vw;
+                }
+                
+                img:nth-child(2) {
+                    width: 20.7vw;
+                }
+                
+                span {
+                    font-size: 3.46vw;
+                }
+            }
+        }
+        
+        .hero__image {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            .front {
+                position: absolute;
+                z-index: 9996;
+                .chart {
+                    width: 26.66vw;
+                    height: 26.66vw;
+                    border-radius: 2.13vw;
+                    border: 0.0352vw;
+                    left: -21.4vw;
+                    bottom: -25.7vw;
+
+                    svg {
+                        width: 4.8vw;
+                        height: 4.8vw;
+                        bottom: -4.92vw;
+                        left: -4.73vw;
+                    }
+                }
+        
+                .order {
+                    left: 19vw;
+                    top: -41vw;
+                    border-radius: 2.08vw;
+    
+                    a {
+                        padding: 0.514vw 13.33vw 0.533vw 2.056vw;
+    
+                            img {
+                                width: 9.33vw;
+                            }
+    
+                            .text {
+                                p {
+                                    font-size: 1.97vw;
+                                }
+                
+                                span {
+                                    font-size: 1.24vw;
+                                }
+                            }
+                    }
+                    svg {
+                            width: 5.06vw;
+                            right: -5.6vw;
+                            top: -2.1vw;
+                    }
+                        
+                    span.time {
+                            bottom: 1.28vw;
+                            right: 2.056vw;
+                            font-size: 1.33vw;
+                    }
+                }
+            }
+        
+            .back {
+                .food-img {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    &::after {
+                        position: absolute;
+                        content: '';
+                        width: 54.4vw;
+                        height: 54.4vw;
+                        border-radius: 58.2vw;
+                    }
+        
+                    img {
+                        width: 54.4vw;
+                        margin-top: 1.94vw;
+                        margin-right: 5.82vw;
+                    }
+                }
+                svg {
+                    top: 9vw;
+                    width: 12.8vw;
+                    height: 12.8vw;
+                    right: -5.2vw;
+                }
+            }
+        }
+        
+        p {        
+            &.hero {
+                font-size: 3vw;
+            }
+        }
+        
+        .features {            
+            .container {
+                padding: 26.66vw 0 21.8vw 0;
+            }
+        
+            &__decor {
+                position: absolute;
+        
+                &:nth-child(1) {
+                    left: -62.6vw;
+                    top: 3.8vw;
+        
+                    svg {
+                        transform: rotate(123.199deg);
+                        position: absolute;
+                    }
+        
+                    svg:nth-child(1) {
+                        position: absolute;
+                        top: -4.3vw;
+                        left: 27.7vw;
+                    }
+                }
+        
+                &:nth-child(3) {
+                    top: 1.32;
+                    right: 4.444vw;
+        
+                    svg {
+                        height: 247px;
+                        position: absolute;
+        
+                        &:nth-child(1) {
+                            left: -3.47vw;
+                            bottom: -15.27vw;
+                        }
+                    }
+                }
+            }
+        
+            &__raw {
+                flex-direction: column;
+                gap: 32vw;
+            }
+        
+            &__feature {
+                
+                h3 {
+                    font-size: 11.52vw;
+                }
+        
+                p {
+                    font-size: 3.84vw;
+                }
+            }
+        }
+        
+        .mobile {
+            .container {
+                position: relative;
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 17.8vw 0;
+                border-bottom: 0.2666vw solid variables.$grey-border;
+                gap: 29.33vw;
+
+                .arrow {
+                    position: absolute;
+                    top: 88vw;
+                    left: 10vw;
+                    animation: rotateDeg 3s infinite;
+
+                    svg {
+                        width: 15vw;
+                        height: 29vw;
+                    }
+                }
+            }
+        
+            &__image {
+                margin-left: 0;
+        
+                &-frame {
+                    background-image: url('/home/phone-frame.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    width: 45.33vw;
+                    height: 91.2vw;
+                }
+                
+                &-screen {
+                    width: 40.2vw;
+                    height: 86.66vw;
+                }
+        
+                svg {
+                    position: absolute;
+                    width: 8vw;
+                    top: -4.3vw;
+                    right: -10vw;
+                }
+            }
+        
+            &__content {
+                align-items: center;
+                gap: 9.33vw;
+        
+                a {
+                    padding: 3.84vw 6.63vw 3.42vw 6.4vw;
+                    border-radius: 2.66vw;
+
+                    a {
+                        font-size: 3.47vw;
+                        line-height: normal;
+                        padding: 0;
+                    }
+                    gap: 2.4vw;
+                }
+            }
+        
+            &__text {
+                text-align: center;
+                gap: 9.8vw;
+
+                h2 {
+                    font-size: 8vw;
+                }
+        
+                ul {
+                    gap: 4.26vw;
+        
+                    li {
+                        text-align: left;
+                        color: variables.$grey-2;
+                        font-size: 3.2vw;;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+        
+        .restaurants {
+            .container {
+                padding: 22.4vw 0 17.6vw 0;
+                gap: 15.7vw;
+                border-bottom: 0.2666vw solid variables.$grey-border;
+                
+                h3 {
+                    text-align: center;
+                    font-size: 8vw;
+                    line-height: 120%;
+                }
+            }
+            
+            &__list {
+                flex-direction: column;    
+                gap: 10.6vw;
+            }
+        
+            .restaurant {
+                border-radius: 6.34vw;
+        
+                &__image {
+                    img {
+                        border-radius: 2.1vw 2.1vw 0 0;
+                        width: 84vw;
+                        height: 37.3vw;
+                    }
+                }
+        
+                &__info {
+                    padding: 2.32vw 0 3.8vw 7.22vw;
+        
+                    .healthy {
+                        font-size: 2.66vw;
+                        padding: 0.65vw 1.73vw 0.4vw 1.8vw;
+                        border-radius: 1.14vw;
+                    }
+                    
+                    .trending {
+                        font-size: 2.66vw;
+                        padding: 0.65vw 1.73vw 0.4vw 1.8vw;
+                        border-radius: 1.14vw;
+                    }
+                }
+        
+                &__desc {
+                    gap: 0.21vw;
+
+                    h5 {
+                        font-size: 5.46vw;
+                    }
+                }
+        
+                &__rating {
+                    gap: 1.33vw;
+        
+                    p {
+                        color: variables.$grey-6;
+                        font-size: 4vw;
+                        font-weight: 400;
+                        line-height: 133.333%;
+                    }
+        
+                    img {
+                        width: 5.33vw;
+                        height: 5.33vw;
+                    }
+                }
+                svg {
+                    height: 8.5vw;
+                    position: absolute;
+                    bottom: 3.6vw;
+                    right: 4.7vw;
+                }
+            } 
+        }
+        
+        .dishes {
+            .container {
+                padding: 22.6vw 0 17.6vw 0;
+                gap: 16.2vw;
+                border-bottom: 0.2666vw solid variables.$grey-border;
+
+                h3 {
+                    text-align: center;
+                    font-size: 8vw;
+                    line-height: 120%;
+                }
+            }
+        
+            &__list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 5.6vw;
+                row-gap: 12vw;
+        
+                .dish {
+                    border-radius: 6.02vw;
+                    border: 0.2666vw solid variables.$white-2;
+                    padding: 4.53vw 3.1vw 5.06vw 1vw;
+        
+                    &__add {
+                        position: absolute;
+                        top: 4.13vw;
+                        right: 4vw;
+                        width: 3.8vw;
+        
+                        svg {
+                            cursor: pointer;
+                            width: 100%;
+                        }
+                    }
+        
+                    &__img {
+                        width: 35vw;
+                    }
+        
+                    &__text {
+                        gap: 2.26vw;
+                        padding: 0 0 4vw 5.14vw;
+                    }
+        
+                    &__info {
+                        &-title {               
+                            p {
+                                padding: 0.48vw 1.28vw 0.266vw 1.33vw;
+                                font-size: 2vw;
+                                border-radius: 0.84vw;
+                            }
+        
+                            h5 {
+                                font-size: 4vw;
+                            }
+                        }
+        
+                        &-rating {
+                            display: flex;
+                            gap: 1vw;
+                            align-items: center;
+        
+                            img {
+                                width: 4vw;
+                                height: 4vw;
+                            }
+        
+                            p {
+                                font-size: 3vw;
+                                line-height: 133.333%;
+                            }
+                        }
+                    }
+        
+                    &__price {
+                        .prices {
+                            &-main {
+                                font-size: 4.5vw;
+                            }
+                            
+                            &-lil {
+                                font-size: 3.28vw;
+                            }
+                        }
+                        svg {
+                            width: 7.62vw;
+                            margin-right: 4.8vw;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .dashboard {
+                .container {
+                    flex-direction: column;
+                    padding: 22.66vw 0 28vw 0;
+                    gap: 26.66vw;
+                    border-bottom: 0.2666vw solid variables.$grey-border;
+                }
+            
+                &__info {
+                    position: relative;
+                    gap: 7.06vw;
+
+                    .arrow {
+                        position: absolute;
+                        transform: rotate(157deg);
+                        bottom: -60px;
+                        right: 29px;
+                        
+                        svg {
+                            width: 15.2vw;
+                            height: 27vw;
+                        }
+                    }
+            
+                    .order-list {
+                        gap: 2.66vw;
+    
+                        .dish {
+                            gap: 3.36vw;
+                            border-radius: 2.13vw;
+                            padding: 0.706vw 19.4vw 0.706vw 2.9vw;
+                            box-shadow: 14.120481491088867px 18.82731056213379px 37.65462112426758px 0px rgba(26, 32, 44, 0.1);
+            
+                            img {
+                                width: 13.6vw;
+                            }
+            
+                            &__info {
+                                gap: 0.66vw;
+            
+                                h6 {
+                                    font-size: 3.36vw;
+                                }
+            
+                                p {
+                                    font-size: 2.13vw;
+                                }
+                            }
+            
+                            &__time {
+                                bottom: 1.73vw;
+                                right: 2.9vw;
+                                font-size: 2.3vw;
+                            }
+                        }
+                    }
+                }
+            
+                &__purchases {
+                    padding: 7.2vw 5.9vw;
+                    border-radius: 4vw;
+                    gap: 5.9vw;
+            
+                    &-title {
+                        gap: 0;
+                        justify-content: space-between;
+                                    
+                        h5 {
+                            font-size: 4.45vw;
+                            letter-spacing: 0.05vw;
+                        }
+            
+                        select {
+                            padding: 2vw 3vw;
+                            gap: 1vw;
+                            border-radius: 2vw;
+                            font-size: 3vw;
+                            letter-spacing: 0.1vw;
+            
+                            option {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+            
+                    &-stats {
+                        gap: 3.46vw;
+                    }
+            
+                    &-stat {
+                        gap: 3.22vw;
+                        padding: 4vw;
+                        border: 0.266vw solid variables.$grey-4;
+                        border-radius: 3vw;
+                    }
+            
+                    &-desc {
+                        display: grid;
+                        grid-template-columns: 50fr 138fr;
+                        grid-template-rows: repeat(2, 1fr);
+                        column-gap: 3vw;
+                        row-gap: 0.5vw;
+                
+                        div {
+                            grid-row: 1 / 3;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 7.92vw;
+                            height: 7.92vw;
+                            border-radius: 50%;
+                            
+                            &.expense {
+                                background-color: #F4F0FF;
+                            }
+            
+                            &.vocher {
+                                background-color: #F2FDF6;
+                            }
+            
+                            svg {
+                                width: 3.9vw;
+                                height: 3.9vw;
+                            }
+                        }
+            
+                        h5 {
+                            font-size: 3vw;
+                            letter-spacing: 0.1vw;
+                        }
+            
+                        p {
+                            font-size: 2.48vw;
+                            letter-spacing: 0.1vw;
+                        }
+                    }
+            
+                    &-count {
+                        font-size: 3.46vw;
+                        letter-spacing: 0.05vw;
+                    }
+            
+                    &-range {
+                        width: 100%;
+                        height: 1.5vw;
+                        border-radius: 17.8475vw;
+                        
+                        &.expense {
+                            background-color: rgba(108, 95, 188, .2);
+                            
+                            div {
+                                border-radius: 17.8475vw;
+                                background: #6C5FBC;
+                                height: 100%;
+                                width: 75%;
+                            }
+                        }
+                        
+                        &.vechor {
+                            background-color: rgba(251, 173, 24, .2);
+                            
+                            div {
+                                border-radius: 17.8475vw;
+                                background: #FBAD18;
+                                height: 100%;
+                                width: 50%;
+                            }
+                        } 
+                    }
+                }
+        
+        }
+        
+        .reviews {
+            .container {
+                padding-top: 24vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5.555vw;
+            }
+        
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 3.2vw;
+        
+                .review {
+                    padding: 2.6vw 3vw;
+                    border-radius: 1.38vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.22vw;
+                    &__header {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+        
+                        &-profile {
+                            display: grid;
+                            column-gap: 1.45vw;
+                            grid-template-columns: 5vw 1fr;
+                            grid-template-rows: repeat(2, 1fr);
+                            align-items: center;
+                            
+                            img {
+                                grid-row: 1 / 3;
+                                width: 5vw;
+                            }
+        
+                            h6 {
+                                color: #030314;
+                                font-family: 'Poppins';
+                                font-size: 1.45vw;
+                                font-weight: 500;
+                                line-height: 150%;
+                            }
+        
+                            p {
+                                color: #5E5D5D;
+                                font-size: 1.16vw;
+                                font-weight: 500;
+                                line-height: 156.25%;
+                            }
+                        }
+        
+                        svg {
+                            width: 4vw;
+                        }
+                    }
+                    
+                    &__main {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2.22vw;
+                        q {
+                            color: variables.$grey-2;
+                            text-align: justify;
+                            font-family: 'Poppins';
+                            font-size: 1.25vw;
+                            font-style: italic;
+                            font-weight: 400;
+                            line-height: 145.094%;
+                            font-style: italic;
+                        }
+                    }
+        
+                    &__rating {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4vw;
+        
+                        img {
+                            width: 1.6vw;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .banner {
+            .container {
+                padding: 21.3vw 0 53.3vw 0;
+            }
+        }
+    }
+}

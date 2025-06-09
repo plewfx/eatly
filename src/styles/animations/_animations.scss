@@ -1,0 +1,32 @@
+@keyframes vertical-shaking {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(-5px) }
+    75% { transform: translateY(5px) }
+    100% { transform: translateY(0) }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateDeg {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(0.5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-0.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes backgroundAnim {
+    0% { background-position: 0px; }
+    50% { background-position: 1000px; }
+    100% { background-position: 0px; }
+}
