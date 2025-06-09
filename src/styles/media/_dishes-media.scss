@@ -1,0 +1,102 @@
+@use '../abstracts/variables';
+
+    
+.dishes {
+    @media (max-width: 700px) {
+        .container {
+            padding: 22.6vw 0 17.6vw 0;
+            gap: 16.2vw;
+            border-bottom: 0.2666vw solid variables.$grey-border;
+    
+            h3 {
+                text-align: center;
+                font-size: 8vw;
+                line-height: 120%;
+            }
+        }
+    
+        &__text {
+            justify-content: center;
+        }
+    
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 5.6vw;
+            row-gap: 12vw;
+    
+            .dish {
+                border-radius: 6.02vw;
+                border: 0.2666vw solid variables.$white-2;
+                padding: 4.53vw 3.1vw 5.06vw 1vw;
+    
+                &__add {
+                    position: absolute;
+                    top: 4.13vw;
+                    right: 4vw;
+                    width: 3.8vw;
+    
+                    svg {
+                        cursor: pointer;
+                        width: 100%;
+                    }
+                }
+    
+                &__img {
+                    width: 35vw;
+                }
+    
+                &__text {
+                    gap: 2.26vw;
+                    padding: 0 0 4vw 5.14vw;
+                }
+    
+                &__info {
+                    &-title {               
+                        p {
+                            padding: 0.48vw 1.28vw 0.266vw 1.33vw;
+                            font-size: 2vw;
+                            border-radius: 0.84vw;
+                        }
+    
+                        h5 {
+                            font-size: 4vw;
+                        }
+                    }
+    
+                    &-rating {
+                        display: flex;
+                        gap: 1vw;
+                        align-items: center;
+    
+                        img {
+                            width: 4vw;
+                            height: 4vw;
+                        }
+    
+                        p {
+                            font-size: 3vw;
+                            line-height: 133.333%;
+                        }
+                    }
+                }
+    
+                &__price {
+                    .prices {
+                        &-main {
+                            font-size: 4.5vw;
+                        }
+                        
+                        &-lil {
+                            font-size: 3.28vw;
+                        }
+                    }
+                    svg {
+                        width: 7.62vw;
+                        margin-right: 4.8vw;
+                    }
+                }
+            }
+        }        
+    }
+}
